@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "PlaylistGenius",
+    "description": "",
+    "role": "",
+    "stack": "",
+    "tag": "Completed"
+  },
+  {
+    "id": 2,
+    "name": "ActivityHub",
+    "description": "",
+    "role": "",
+    "stack": "",
+    "tag": "Completed"
+  },
+  {
+    "id": 3,
+    "name": "Host Agents for managers",
+    "description": "",
+    "role": "",
+    "stack": "",
+    "tag": "Completed"
+  },
+  {
+    "id": 4,
+    "name": "Host Agents Red (backend)",
+    "description": "",
+    "role": "",
+    "stack": "",
+    "tag": "Completed"
+  },
+  {
+    "id": 5,
+    "name": "Holiday Apartments",
+    "description": "",
+    "role": "",
+    "stack": "",
+    "tag": "Coming soon"
+  },
+  {
+    "id": 6,
+    "name": "GuideMe Tours",
+    "description": "",
+    "role": "",
+    "stack": "",
+    "tag": "Coming soon"
+  }
+]

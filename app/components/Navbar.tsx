@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
+import { DiGithubBadge } from "react-icons/di";
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = React.useState(localStorage.theme === "dark");
@@ -37,10 +38,19 @@ export default function Navbar() {
         <Image src={"/react.png"} alt="logo" width={50} height={50} />
         <div className="flex flex-row items-center gap-6">
           <Link href="/" className="text-sm font-bold">
-            Me
+            Projects
           </Link>
-          <Link href="/blog" className="text-sm font-bold">
-            Blog
+          <Link href="/" className="text-sm font-bold">
+            Stack
+          </Link>
+          <Link href="/" className="text-sm font-bold">
+            Skills
+          </Link>
+          <Link
+            href="mailto:taysongermano@gmail.com"
+            className="text-sm font-bold"
+          >
+            Contact
           </Link>
           <button
             className="pr-5 border-r-2 border-gray"
@@ -49,10 +59,18 @@ export default function Navbar() {
             <DarkModeToggle darkMode={darkMode} />
           </button>
           <Link
-            href="/contact"
-            className="px-4 py-2 bg-indigo-500 text-white text-sm shadow-md rounded-md uppercase hover:text-white"
+            href="/Tyson_Monteiro_CV.pdf"
+            className="text-[#a2a8b3] hover:text-[#64748B]"
           >
-            Contact
+            <DiGithubBadge size={30} />
+          </Link>
+          <Link
+            href="/Tyson_Monteiro_CV.pdf"
+            download="Tyson_Monteiro_CV.pdf"
+            target="_blank"
+            className="px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase hover:text-white"
+          >
+            Download CV
           </Link>
         </div>
       </div>
