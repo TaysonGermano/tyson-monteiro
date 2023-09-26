@@ -2,31 +2,54 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectCard() {
+type Stack = {
+  id: number;
+  name: string;
+};
+
+export type Project = {
+  id: number;
+  tag: string;
+  name: string;
+  description: string;
+  role: string;
+  stack: Stack[];
+};
+
+export default function ProjectCard(props: Project) {
   return (
     <div className="w-[400px] min-w-[280px] shadow-md rounded-md transition-shadow bg-white dark:bg-slate-800 hover:shadow-xl ">
-      <div className="h-[200px] relative bg-gray-200 rounded-t-md "></div>
+      <div className="h-[200px] relative bg-gray-200 rounded-t-md ">
+        <span
+          className={`py-1 px-2 rounded-md absolute top-5 left-5 text-white text-sm ${
+            props.tag === "Completed" ? "bg-green-500" : "bg-red-500"
+          }`}
+        >
+          {props.tag}
+        </span>
+      </div>
       <div className="content p-5">
         <p className="text-md mb-3">
-          <b>PlaylistGenius</b>
+          <b>{props.name}</b>
         </p>
         <p className="text-sm mb-2">
           <b>Description:</b>{" "}
           <span className="text-slate-500 dark:text-slate-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur natus architecto error totam doloribus.
+            {props.description}
           </span>
         </p>
         <p className="text-sm  mb-2">
           <b>My Role:</b>{" "}
           <span className="text-slate-500 dark:text-slate-400">
-            Frontend Developer
+            {props.role}
           </span>
         </p>
         <p className="text-sm">
           <b>Stack:</b>{" "}
           <span className="text-slate-500 dark:text-slate-400">
-            Reactjs, Nextjs, MongoDb
+            {props.stack.map((stack: Stack, i: number, arr: Stack[]) =>
+              i !== arr.length - 1 ? `${stack.name}, ` : `${stack.name}`
+            )}
           </span>
         </p>
         <div className="flex flex-row justify-end mt-5 mb-2">

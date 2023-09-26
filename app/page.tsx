@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ProjectCard from "./components/ProjectCard";
+import { Project } from "./components/ProjectCard";
 import Image from "next/image";
 import Javascript from "./components/icons/Javascript";
 import Reactjs from "./components/icons/Reactjs";
@@ -12,6 +13,7 @@ import Typescript from "./components/icons/Typescript";
 import Tailwind from "./components/icons/Tailwind";
 import InfoCard from "./components/InfoCard";
 import Chip from "./components/Chip";
+import projects from "./data/projects.json";
 
 type filter = {
   name: string;
@@ -36,11 +38,6 @@ const initialFilterData = [
     id: 3,
   },
   {
-    name: "React native",
-    active: true,
-    id: 4,
-  },
-  {
     name: "Nodejs",
     active: true,
     id: 5,
@@ -50,18 +47,73 @@ const initialFilterData = [
     active: true,
     id: 6,
   },
+  {
+    name: "MUI",
+    active: true,
+    id: 7,
+  },
+  {
+    name: "Javascript",
+    active: true,
+    id: 8,
+  },
+  {
+    name: "Jquery",
+    active: true,
+    id: 9,
+  },
+  {
+    name: "My SQL",
+    active: true,
+    id: 10,
+  },
+  {
+    name: "PHP",
+    active: true,
+    id: 11,
+  },
+  {
+    name: "React Native",
+    active: true,
+    id: 12,
+  },
+  {
+    name: "Expo Go",
+    active: true,
+    id: 13,
+  },
 ];
 
 export default function Home() {
   const [filters, setFilter] = React.useState([...initialFilterData]);
+  const [selectedProjects, setSelectedProjects] = React.useState([...projects]);
 
   const handleFilter = (id: number) => {
-    setFilter((prev: filter[]) =>
-      prev.map((filter: filter) => ({
-        ...filter,
-        active: id === filter.id ? !filter.active : filter.active,
-      }))
-    );
+    const newFilters = filters.map((filter: filter) => ({
+      ...filter,
+      active: id === filter.id ? !filter.active : filter.active,
+    }));
+
+    const activeStacks = newFilters
+      .filter((filter: filter) => filter.active)
+      .map((filter: filter) => filter.id);
+
+    let filteredProjects: Project[] = [];
+
+    projects.forEach((project: Project) => {
+      for (const stack of project.stack) {
+        const filteredProjs = filteredProjects.find(
+          (filteredProj: Project) => filteredProj.id === project.id
+        );
+
+        if (!filteredProjs && activeStacks.includes(stack.id)) {
+          filteredProjects.push(project);
+        }
+      }
+    });
+
+    setFilter(newFilters);
+    setSelectedProjects(filteredProjects);
   };
 
   return (
@@ -102,11 +154,9 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-4 flex flex-row flex-wrap gap-5">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {selectedProjects.map((project: Project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </div>
       </div>
       <div className="mt-5 pt-[80px] ">

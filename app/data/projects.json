@@ -2,49 +2,155 @@
   {
     "id": 1,
     "name": "PlaylistGenius",
-    "description": "",
-    "role": "",
-    "stack": "",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "role": "Full-stack Developer",
+    "stack": [
+      {
+        "id": 3,
+        "name": "Nextjs"
+      },
+      {
+        "id": 1,
+        "name": "Reactjs"
+      },
+      {
+        "id": 2,
+        "name": "Typescript"
+      },
+      {
+        "id": 6,
+        "name": "Mongodb"
+      },
+      {
+        "id": 7,
+        "name": "MUI"
+      }
+    ],
     "tag": "Completed"
   },
   {
     "id": 2,
     "name": "ActivityHub",
-    "description": "",
-    "role": "",
-    "stack": "",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "role": "Frontend Developer",
+    "stack": [
+      {
+        "id": 8,
+        "name": "Javascript"
+      },
+      {
+        "id": 9,
+        "name": "Jquery"
+      },
+      {
+        "id": 10,
+        "name": "My SQL"
+      },
+      {
+        "id": 11,
+        "name": "PHP"
+      }
+    ],
     "tag": "Completed"
   },
   {
     "id": 3,
     "name": "Host Agents for managers",
-    "description": "",
-    "role": "",
-    "stack": "",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "role": "Frontend Developer",
+    "stack": [
+      {
+        "id": 12,
+        "name": "React Native"
+      },
+      {
+        "id": 13,
+        "name": "Expo Go"
+      },
+      {
+        "id": 14,
+        "name": "React Native Paper"
+      }
+    ],
     "tag": "Completed"
   },
   {
     "id": 4,
     "name": "Host Agents Red (backend)",
-    "description": "",
-    "role": "",
-    "stack": "",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "role": "Frontend Developer",
+    "stack": [
+      {
+        "id": 1,
+        "name": "Reactjs"
+      },
+      {
+        "id": 2,
+        "name": "Typescript"
+      },
+      {
+        "id": 11,
+        "name": "PHP"
+      },
+      {
+        "id": 10,
+        "name": "My SQL"
+      }
+    ],
     "tag": "Completed"
   },
   {
     "id": 5,
     "name": "Holiday Apartments",
-    "description": "",
-    "role": "",
-    "stack": "",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "role": "Frontend Developer",
+    "stack": [
+      {
+        "id": 3,
+        "name": "Nextjs"
+      },
+      {
+        "id": 1,
+        "name": "Reactjs"
+      },
+      {
+        "id": 7,
+        "name": "MUI"
+      },
+      {
+        "id": 11,
+        "name": "PHP"
+      },
+      {
+        "id": 10,
+        "name": "My SQL"
+      }
+    ],
     "tag": "Coming soon"
   },
   {
     "id": 6,
     "name": "GuideMe Tours",
-    "description": "",
-    "role": "",
-    "stack": "",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "role": "Full-stack Developer",
+    "stack": [
+      {
+        "id": 3,
+        "name": "Nextjs"
+      },
+      {
+        "id": 1,
+        "name": "Reactjs"
+      },
+      {
+        "id": 2,
+        "name": "Typescript"
+      },
+      {
+        "id": 6,
+        "name": "Mongodb"
+      }
+    ],
     "tag": "Coming soon"
   }
 ]
