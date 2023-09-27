@@ -33,7 +33,7 @@
   {
     "id": 2,
     "name": "ActivityHub",
-    "description": "ActivityHub is your premier platform for curated tours and activities. Nestled in the heart of Cape Town, ActivityHub has been dedicated to providing clients with the finest vacation experiences and more. Explore the wonders of South Africa, where each activity is crafted to make your journey truly memorable. Was fun working on this project with the team!",
+    "description": "ActivityHub is your premier platform for curated tours and activities. Nestled in the heart of Cape Town, ActivityHub has been dedicated to providing clients with the finest vacation experiences and more. Explore the wonders of South Africa, where each activity is crafted to make your journey truly memorable.",
     "role": "Frontend Developer",
     "stack": [
       {
@@ -60,7 +60,7 @@
   {
     "id": 3,
     "name": "Host Agents for managers",
-    "description": "My inaugural venture into React Native, Host Agents for Managers, stands as a testament to my early expertise. Tailored primarily for company employees engaged in property management, this versatile app is accessible on both Android and iOS platforms. Seamless fusion of functionality and user-friendly design that simplifies property management tasks.",
+    "description": "My inaugural venture into React Native, Host Agents for Managers, stands as a testament to my early expertise. Tailored primarily for company employees engaged in property management, this versatile app is accessible on both Android and iOS platforms. Seamless fusion of functionality and user-friendly design.",
     "role": "Frontend Developer",
     "stack": [
       {
@@ -83,7 +83,7 @@
   {
     "id": 4,
     "name": "Host Agents Red (backend)",
-    "description": "In response to the company's vision for an enhanced business system, I spearheaded the transformation of their antiquated PHP backend to a modern React.js version. I leveraged React and TypeScript to create a dynamic interface. This revamped system integrates with their existing PHP/Laravel API, facilitating secure and efficient data transfer. It's important to note that this project is confidential, and the link is not available for public use.",
+    "description": "In response to the company's vision for an enhanced business system, I spearheaded the transformation of their antiquated PHP backend to a modern React.js version. This revamped system integrates with their existing PHP/Laravel API, facilitating secure and efficient data transfer.",
     "role": "Frontend Developer",
     "stack": [
       {
@@ -110,7 +110,7 @@
   {
     "id": 5,
     "name": "Holiday Apartments",
-    "description": "Holiday Apartments is your go-to booking platform for delightful short-term rentals. Following the footsteps of Airbnb and Booking.com, they provide an array of listings across South Africa, ensuring you find the perfect accommodation for your stay. You can explore their curated selection and make your South African vacation memorable.",
+    "description": "Holiday Apartments is your go-to booking platform for delightful short-term rentals. Following the footsteps of Airbnb and Booking.com, they provide an array of listings across South Africa, ensuring you find the perfect accommodation for your stay.",
     "role": "Frontend Developer",
     "stack": [
       {
