@@ -14,6 +14,8 @@ export type Project = {
   description: string;
   role: string;
   stack: Stack[];
+  access: string;
+  link: string;
 };
 
 export default function ProjectCard(props: Project) {
@@ -44,6 +46,18 @@ export default function ProjectCard(props: Project) {
             {props.role}
           </span>
         </p>
+        <p className="text-sm  mb-2">
+          <b>Access:</b>{" "}
+          <span
+            className={
+              props.access.toLocaleLowerCase() === "public"
+                ? "text-green-500"
+                : "text-red-500"
+            }
+          >
+            {props.access}
+          </span>
+        </p>
         <p className="text-sm">
           <b>Stack:</b>{" "}
           <span className="text-slate-500 dark:text-slate-400">
@@ -52,14 +66,17 @@ export default function ProjectCard(props: Project) {
             )}
           </span>
         </p>
-        <div className="flex flex-row justify-end mt-5 mb-2">
-          <Link
-            href="#"
-            className="text-sm text-indigo-500 inline-block  hover:text-indigo-500"
-          >
-            View Project
-          </Link>
-        </div>
+        {props.link && (
+          <div className="flex flex-row justify-end mt-5 mb-2">
+            <Link
+              href={props.link}
+              target="_blank"
+              className="text-sm text-indigo-500 inline-block  hover:text-indigo-500"
+            >
+              View Project
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

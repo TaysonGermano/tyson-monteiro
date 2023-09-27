@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "PlaylistGenius",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "description": "PlaylistGenius stands as the pioneering playlist generator, utilizing AI to craft personalized playlists tailored to the user's criteria. Perfect for DJs and music enthusiasts, it includes features like exporting to YouTube and Spotify, merging two or more playlists, and creating playlists based on mood, BPM, genre, and more.",
     "role": "Full-stack Developer",
     "stack": [
       {
@@ -26,12 +26,14 @@
         "name": "MUI"
       }
     ],
-    "tag": "Completed"
+    "tag": "Completed",
+    "access": "Public",
+    "link": "https://www.playlistgenius.app/"
   },
   {
     "id": 2,
     "name": "ActivityHub",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "description": "ActivityHub is your premier platform for curated tours and activities. Nestled in the heart of Cape Town, ActivityHub has been dedicated to providing clients with the finest vacation experiences and more. Explore the wonders of South Africa, where each activity is crafted to make your journey truly memorable. Was fun working on this project with the team!",
     "role": "Frontend Developer",
     "stack": [
       {
@@ -51,12 +53,14 @@
         "name": "PHP"
       }
     ],
-    "tag": "Completed"
+    "tag": "Completed",
+    "access": "Public",
+    "link": "https://activityhub.travel/"
   },
   {
     "id": 3,
     "name": "Host Agents for managers",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "description": "My inaugural venture into React Native, Host Agents for Managers, stands as a testament to my early expertise. Tailored primarily for company employees engaged in property management, this versatile app is accessible on both Android and iOS platforms. Seamless fusion of functionality and user-friendly design that simplifies property management tasks.",
     "role": "Frontend Developer",
     "stack": [
       {
@@ -72,12 +76,14 @@
         "name": "React Native Paper"
       }
     ],
-    "tag": "Completed"
+    "tag": "Completed",
+    "access": "Private",
+    "link": "https://play.google.com/store/apps/details?id=com.hostagents.hostagentsformanagers&pli=1"
   },
   {
     "id": 4,
     "name": "Host Agents Red (backend)",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "description": "In response to the company's vision for an enhanced business system, I spearheaded the transformation of their antiquated PHP backend to a modern React.js version. I leveraged React and TypeScript to create a dynamic interface. This revamped system integrates with their existing PHP/Laravel API, facilitating secure and efficient data transfer. It's important to note that this project is confidential, and the link is not available for public use.",
     "role": "Frontend Developer",
     "stack": [
       {
@@ -97,12 +103,14 @@
         "name": "My SQL"
       }
     ],
-    "tag": "Completed"
+    "tag": "Completed",
+    "access": "Private",
+    "link": ""
   },
   {
     "id": 5,
     "name": "Holiday Apartments",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "description": "Holiday Apartments is your go-to booking platform for delightful short-term rentals. Following the footsteps of Airbnb and Booking.com, they provide an array of listings across South Africa, ensuring you find the perfect accommodation for your stay. You can explore their curated selection and make your South African vacation memorable.",
     "role": "Frontend Developer",
     "stack": [
       {
@@ -124,14 +132,20 @@
       {
         "id": 10,
         "name": "My SQL"
+      },
+      {
+        "id": 15,
+        "name": "Redux"
       }
     ],
-    "tag": "Coming soon"
+    "tag": "Coming soon",
+    "access": "Public",
+    "link": ""
   },
   {
     "id": 6,
     "name": "GuideMe Tours",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus architecto error totam doloribus.",
+    "description": "GuideMe Tours is a distinguished platform specializing in luxurious and private tours throughout Cape Town. Currently, I am fully engaged as a Fullstack developer, tasked with taking this project from inception to completion. Leveraging my expertise in UI/UX design and software engineering.",
     "role": "Full-stack Developer",
     "stack": [
       {
@@ -149,8 +163,64 @@
       {
         "id": 6,
         "name": "Mongodb"
+      },
+      {
+        "id": 15,
+        "name": "Redux"
       }
     ],
-    "tag": "Coming soon"
+    "tag": "Coming soon",
+    "access": "Public",
+    "link": ""
+  },
+  {
+    "id": 7,
+    "name": "Tyson Monteiro - Portfolio",
+    "description": "This platform is a personal showcase I meticulously developed to provide a glimpse into my work for potential customers, recruiters, and anyone interested in learning more about me. Here you can explore my journey and discover where I stand as a developer.",
+    "role": "Full-stack Developer",
+    "stack": [
+      {
+        "id": 3,
+        "name": "Nextjs"
+      },
+      {
+        "id": 1,
+        "name": "Reactjs"
+      },
+      {
+        "id": 2,
+        "name": "Typescript"
+      },
+      {
+        "id": 14,
+        "name": "Tailwind CSS"
+      }
+    ],
+    "tag": "Completed",
+    "access": "Public",
+    "link": ""
+  },
+  {
+    "id": 7,
+    "name": "Invoice App",
+    "description": "A simple yet powerful invoice app, crafted as a challenge from frontendmentor.io. This creation stands as a testament to my prowess in React Context, showcasing intricate user interface design with styled components, and a seamless implementation of CRUD functionalities.",
+    "role": "Full-stack Developer",
+    "stack": [
+      {
+        "id": 1,
+        "name": "Reactjs"
+      },
+      {
+        "id": 8,
+        "name": "Javascript"
+      },
+      {
+        "id": 16,
+        "name": "Styled Components"
+      }
+    ],
+    "tag": "Completed",
+    "access": "Public",
+    "link": "https://simpleinvoicedemo.netlify.app/"
   }
 ]

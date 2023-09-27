@@ -14,6 +14,7 @@ import Tailwind from "./components/icons/Tailwind";
 import InfoCard from "./components/InfoCard";
 import Chip from "./components/Chip";
 import projects from "./data/projects.json";
+import stacks from "./data/stacks.json";
 
 type filter = {
   name: string;
@@ -21,71 +22,8 @@ type filter = {
   id: number;
 };
 
-const initialFilterData = [
-  {
-    name: "Reactjs",
-    active: true,
-    id: 1,
-  },
-  {
-    name: "Typescript",
-    active: true,
-    id: 2,
-  },
-  {
-    name: "Nextjs",
-    active: true,
-    id: 3,
-  },
-  {
-    name: "Nodejs",
-    active: true,
-    id: 5,
-  },
-  {
-    name: "Mongodb",
-    active: true,
-    id: 6,
-  },
-  {
-    name: "MUI",
-    active: true,
-    id: 7,
-  },
-  {
-    name: "Javascript",
-    active: true,
-    id: 8,
-  },
-  {
-    name: "Jquery",
-    active: true,
-    id: 9,
-  },
-  {
-    name: "My SQL",
-    active: true,
-    id: 10,
-  },
-  {
-    name: "PHP",
-    active: true,
-    id: 11,
-  },
-  {
-    name: "React Native",
-    active: true,
-    id: 12,
-  },
-  {
-    name: "Expo Go",
-    active: true,
-    id: 13,
-  },
-];
-
 export default function Home() {
-  const [filters, setFilter] = React.useState([...initialFilterData]);
+  const [filters, setFilter] = React.useState([...stacks]);
   const [selectedProjects, setSelectedProjects] = React.useState([...projects]);
 
   const handleFilter = (id: number) => {
@@ -118,8 +56,8 @@ export default function Home() {
 
   return (
     <div className="pt-5">
-      <div className="flex flex-row py-7 justify-between items-center">
-        <div className="hero-content w-[600px]">
+      <div className="flex flex-col-reversed sm:flex-row py-7 sm:justify-between items-center">
+        <div className="hero-content sm:w-[600px] text-center sm:text-left">
           <p className="mt-6 text-sm text-slate-500 dark:text-slate-400 mb-2">
             Tyson Monteiro - Full Stack JavaScript Developer
           </p>
@@ -139,7 +77,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-5 ">
+      <div className="mt-5" id="projects">
         <h2 className="text-2xl font-bold">Feature Projects</h2>
         <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 ">
           Below is a list of few projects I was involved
@@ -153,19 +91,19 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="mt-4 flex flex-row flex-wrap gap-5">
+        <div className="mt-4 flex flex-col items-center sm:items-stretch sm:flex-row sm:flex-wrap gap-5">
           {selectedProjects.map((project: Project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
         </div>
       </div>
-      <div className="mt-5 pt-[80px] ">
+      <div className="mt-5 pt-[80px]" id="stack">
         <h2 className="text-2xl font-bold">My Stack</h2>
         <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 ">
           I specialize in building web applications using a robust stack of
           technologies:
         </p>
-        <div className="mt-4 flex flex-row gap-4">
+        <div className="mt-4 flex flex-row flex-wrap gap-4">
           <Javascript />
           <Reactjs />
           <Typescript />
@@ -176,14 +114,14 @@ export default function Home() {
           <Tailwind />
         </div>
       </div>
-      <div className="mt-5 py-[80px] ">
+      <div className="mt-5 py-[80px]" id="skills">
         <h2 className="text-2xl font-bold">More About Me</h2>
         <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 ">
           I&apos;m a highly skilled and results-driven Full-Stack Developer with
           a passion for crafting innovative solutions that enhance the daily
           lives of individuals
         </p>
-        <div className="mt-4 flex flex-row flex-wrap gap-4">
+        <div className="mt-4 flex flex-col items-center sm:items-stretch sm:flex-row flex-wrap gap-4">
           <InfoCard
             title="Skills"
             htlm

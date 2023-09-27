@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
 import { DiGithubBadge } from "react-icons/di";
@@ -37,15 +38,30 @@ export default function Navbar() {
       <div className="flex flex-row justify-between items-center py-4">
         <Image src={"/react.png"} alt="logo" width={50} height={50} />
         <div className="flex flex-row items-center gap-6">
-          <Link href="/" className="text-sm font-bold">
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="text-sm font-bold hover:cursor-pointer"
+          >
             Projects
-          </Link>
-          <Link href="/" className="text-sm font-bold">
+          </ScrollLink>
+          <ScrollLink
+            to="stack"
+            smooth={true}
+            duration={500}
+            className="text-sm font-bold hover:cursor-pointer"
+          >
             Stack
-          </Link>
-          <Link href="/" className="text-sm font-bold">
+          </ScrollLink>
+          <ScrollLink
+            to="skills"
+            smooth={true}
+            duration={500}
+            className="text-sm font-bold hover:cursor-pointer"
+          >
             Skills
-          </Link>
+          </ScrollLink>
           <Link
             href="mailto:taysongermano@gmail.com"
             className="text-sm font-bold"

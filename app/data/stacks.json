@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Reactjs",
+    "active": true,
+    "id": 1
+  },
+  {
+    "name": "Typescript",
+    "active": true,
+    "id": 2
+  },
+  {
+    "name": "Nextjs",
+    "active": true,
+    "id": 3
+  },
+  {
+    "name": "Nodejs",
+    "active": true,
+    "id": 5
+  },
+  {
+    "name": "Mongodb",
+    "active": true,
+    "id": 6
+  },
+  {
+    "name": "MUI",
+    "active": true,
+    "id": 7
+  },
+  {
+    "name": "Javascript",
+    "active": true,
+    "id": 8
+  },
+  {
+    "name": "Jquery",
+    "active": true,
+    "id": 9
+  },
+  {
+    "name": "My SQL",
+    "active": true,
+    "id": 10
+  },
+  {
+    "name": "PHP",
+    "active": true,
+    "id": 11
+  },
+  {
+    "name": "React Native",
+    "active": true,
+    "id": 12
+  },
+  {
+    "name": "Expo Go",
+    "active": true,
+    "id": 13
+  },
+  {
+    "name": "Tailwind CSS",
+    "active": true,
+    "id": 14
+  },
+  {
+    "name": "Redux",
+    "active": true,
+    "id": 15
+  },
+  {
+    "name": "Styled Components",
+    "active": true,
+    "id": 16
+  }
+]
