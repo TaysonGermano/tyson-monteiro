@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} dark:bg-[#0F172A]`}>
         <Navbar />
-        <main className="mx-auto sm:max-w-7xl px-4 relative">{children}</main>
+        <main className="mx-auto max-w-7xl px-4">{children}</main>
         <footer className="mx-auto max-w-7xl px-4 py-5 mt-5 border-t dark:border-[#e2e8f00d]">
           <p className="text-sm text-slate-300 text-center">
             &copy; Tyson Monteiro {new Date().getFullYear()} &#183; built with ♥

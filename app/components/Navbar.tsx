@@ -35,9 +35,9 @@ export default function Navbar() {
 
   return (
     <nav className="mx-auto max-w-7xl px-4">
-      <div className="flex flex-row justify-between items-center py-4">
+      <div className="flex flex-col sm:flex-row justify-between items-center py-4">
         <Image src={"/react.png"} alt="logo" width={50} height={50} />
-        <div className="flex flex-row items-center gap-6">
+        <div className="flex flex-col sm:flex-row items-center gap-6">
           <ScrollLink
             to="projects"
             smooth={true}

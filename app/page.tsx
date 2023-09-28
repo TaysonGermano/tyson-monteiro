@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <div className="pt-5">
-      <div className="flex flex-col-reversed sm:flex-row py-7 sm:justify-between items-center">
+      <div className="flex flex-col-reverse sm:flex-row py-7 sm:justify-between items-center">
         <div className="hero-content sm:w-[600px] text-center sm:text-left">
           <p className="mt-6 text-sm text-slate-500 dark:text-slate-400 mb-2">
             Tyson Monteiro - Full Stack JavaScript Developer
@@ -67,7 +67,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="profile">
-          <div className="avatar w-[300px] h-[300px] rounded-full bg-gray-100 relative">
+          <div className="avatar w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full bg-gray-100 relative">
             <Image
               src="/tysonmonteiro.jpg"
               alt="profile"

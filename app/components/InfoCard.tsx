@@ -10,7 +10,7 @@ type Props = {
 export default function InfoCard(props: Props) {
   return (
     <div
-      className={`${props.className} w-[600px] min-w-[400px] rounded-md transition-all border-2 p-5 select-none dark:border-slate-800`}
+      className={`${props.className} sm:w-[600px] rounded-md transition-all border-2 p-5 select-none dark:border-slate-800`}
     >
       <div className="title">
         <h2 className="text-xl font-bold">{props.title}</h2>
