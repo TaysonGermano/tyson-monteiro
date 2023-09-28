@@ -1,82 +1,87 @@
 [
   {
-    "name": "Reactjs",
+    "name": "All Projects",
     "active": true,
+    "id": 0
+  },
+  {
+    "name": "Reactjs",
+    "active": false,
     "id": 1
   },
   {
     "name": "Typescript",
-    "active": true,
+    "active": false,
     "id": 2
   },
   {
     "name": "Nextjs",
-    "active": true,
+    "active": false,
     "id": 3
   },
   {
     "name": "Tailwind CSS",
-    "active": true,
+    "active": false,
     "id": 4
   },
   {
     "name": "Nodejs",
-    "active": true,
+    "active": false,
     "id": 5
   },
   {
     "name": "Mongodb",
-    "active": true,
+    "active": false,
     "id": 6
   },
   {
     "name": "MUI",
-    "active": true,
+    "active": false,
     "id": 7
   },
   {
     "name": "Javascript",
-    "active": true,
+    "active": false,
     "id": 8
   },
   {
     "name": "Jquery",
-    "active": true,
+    "active": false,
     "id": 9
   },
   {
     "name": "My SQL",
-    "active": true,
+    "active": false,
     "id": 10
   },
   {
     "name": "PHP",
-    "active": true,
+    "active": false,
     "id": 11
   },
   {
     "name": "React Native",
-    "active": true,
+    "active": false,
     "id": 12
   },
   {
     "name": "Expo Go",
-    "active": true,
+    "active": false,
     "id": 13
   },
   {
     "name": "React Native Paper",
-    "active": true,
+    "active": false,
     "id": 14
   },
   {
     "name": "Redux",
-    "active": true,
+    "active": false,
     "id": 15
   },
   {
     "name": "Styled Components",
-    "active": true,
+    "active": false,
     "id": 16
   }
 ]

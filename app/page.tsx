@@ -28,9 +28,15 @@ export default function Home() {
   const [selectedProjects, setSelectedProjects] = React.useState([...projects]);
 
   const handleFilter = (id: number) => {
+    if (id === 0) {
+      setFilter([...stacks]);
+      setSelectedProjects([...projects]);
+      return;
+    }
+
     const newFilters = filters.map((filter: filter) => ({
       ...filter,
-      active: id === filter.id ? !filter.active : filter.active,
+      active: id === filter.id ? true : false,
     }));
 
     const activeStacks = newFilters
