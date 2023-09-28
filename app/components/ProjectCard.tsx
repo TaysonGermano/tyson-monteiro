@@ -20,7 +20,7 @@ export type Project = {
 
 export default function ProjectCard(props: Project) {
   return (
-    <div className="sm:w-[400px] shadow-md rounded-md transition-shadow bg-white dark:bg-slate-800 hover:shadow-xl ">
+    <div className="sm:max-w-[400px] shadow-md rounded-md transition-shadow bg-white dark:bg-slate-800 hover:shadow-xl ">
       <div className="h-[200px] relative bg-gray-200 rounded-t-md ">
         <span
           className={`py-1 px-2 rounded-md absolute top-5 left-5 text-white text-sm ${

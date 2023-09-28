@@ -15,6 +15,7 @@ import InfoCard from "./components/InfoCard";
 import Chip from "./components/Chip";
 import projects from "./data/projects.json";
 import stacks from "./data/stacks.json";
+import Link from "next/link";
 
 type filter = {
   name: string;
@@ -65,6 +66,14 @@ export default function Home() {
             Hey there! I&apos;m Tyson Monteiro, a Full Stack JavaScript
             developer with a laser focus on React.js and its vibrant ecosystem.
           </h1>
+          <Link
+            href="/Tyson_Monteiro_CV.pdf"
+            download="Tyson_Monteiro_CV.pdf"
+            target="_blank"
+            className="sm:hidden inline-block mt-3 px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase hover:text-white"
+          >
+            Download CV
+          </Link>
         </div>
         <div className="profile">
           <div className="avatar w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full bg-gray-100 relative">
@@ -121,7 +130,7 @@ export default function Home() {
           a passion for crafting innovative solutions that enhance the daily
           lives of individuals
         </p>
-        <div className="mt-4 flex flex-col items-center sm:items-stretch sm:flex-row flex-wrap gap-4">
+        <div className="mt-4 flex flex-col items-center sm:items-stretch sm:flex-row gap-4">
           <InfoCard
             title="Skills"
             htlm

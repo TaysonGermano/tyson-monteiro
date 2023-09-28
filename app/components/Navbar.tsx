@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav className="mx-auto max-w-7xl px-4">
       <div className="flex flex-col sm:flex-row justify-between items-center py-4">
         <Image src={"/react.png"} alt="logo" width={50} height={50} />
-        <div className="flex flex-col sm:flex-row items-center gap-6">
+        <div className="flex flex-row flex-wrap justify-center mt-2 sm:mt-0 sm:justify-start items-center gap-4 sm:gap-6">
           <ScrollLink
             to="projects"
             smooth={true}
@@ -69,7 +69,7 @@ export default function Navbar() {
             Contact
           </Link>
           <button
-            className="pr-5 border-r-2 border-gray"
+            className="sm:pr-5 sm:border-r-2 sm:border-gray"
             onClick={toogleDarkMode}
           >
             <DarkModeToggle darkMode={darkMode} />
@@ -84,7 +84,7 @@ export default function Navbar() {
             href="/Tyson_Monteiro_CV.pdf"
             download="Tyson_Monteiro_CV.pdf"
             target="_blank"
-            className="px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase hover:text-white"
+            className="hidden px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase sm:inline hover:text-white"
           >
             Download CV
           </Link>
