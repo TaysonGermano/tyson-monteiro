@@ -106,7 +106,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="mt-4 flex flex-col items-center sm:items-stretch sm:flex-row sm:flex-wrap gap-5">
+        <div className="mt-4 grid lg:grid-cols-3 sm:grid-cols-2 gap-4 sm:items-stretch">
           {selectedProjects.map((project: Project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
