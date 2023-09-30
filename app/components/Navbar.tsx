@@ -5,33 +5,22 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
 import { DiGithubBadge } from "react-icons/di";
+import { useDispatch, useSelector } from "react-redux";
+import { setDarkMode } from "../redux/dark-mode/action/action";
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = React.useState(localStorage.theme === "dark");
+  const dispatch = useDispatch();
+  const darkMode = useSelector(
+    (state: { darkMode: boolean }) => state.darkMode
+  );
 
   function toogleDarkMode() {
-    if (document.documentElement.classList.contains("dark")) {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    }
-
-    setDarkMode(!darkMode);
+    dispatch(setDarkMode());
   }
 
   React.useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
+    localStorage.theme === "dark" && dispatch(setDarkMode());
+  }, [dispatch]);
 
   return (
     <nav className="mx-auto max-w-7xl px-4">

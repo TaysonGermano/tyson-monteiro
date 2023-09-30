@@ -3,29 +3,26 @@ import React from "react";
 import ProjectCard from "./components/ProjectCard";
 import { Project } from "./components/ProjectCard";
 import Image from "next/image";
-import Javascript from "./components/icons/Javascript";
-import Reactjs from "./components/icons/Reactjs";
-import Nodejs from "./components/icons/Nodejs";
-import Expressjs from "./components/icons/Expressjs";
-import Nextjs from "./components/icons/Nextjs";
-import Mongodb from "./components/icons/Mongodb";
-import Typescript from "./components/icons/Typescript";
-import Tailwind from "./components/icons/Tailwind";
 import InfoCard from "./components/InfoCard";
 import Chip from "./components/Chip";
 import projects from "./data/projects.json";
 import stacks from "./data/stacks.json";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 type filter = {
   name: string;
   active: boolean;
   id: number;
+  image: string;
 };
 
 export default function Home() {
   const [filters, setFilter] = React.useState([...stacks]);
   const [selectedProjects, setSelectedProjects] = React.useState([...projects]);
+  const darkMode = useSelector(
+    (state: { darkMode: boolean }) => state.darkMode
+  );
 
   const handleFilter = (id: number) => {
     if (id === 0) {
@@ -95,7 +92,7 @@ export default function Home() {
       <div className="mt-5" id="projects">
         <h2 className="text-2xl font-bold">Feature Projects</h2>
         <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 ">
-          Below is a list of few projects I was involved
+          Below is a list of few projects I&apos;m involved
         </p>
         <div className="mt-4 flex flex-row flex-wrap gap-3">
           {filters.map((filter: filter) => (
@@ -106,7 +103,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="mt-4 flex flex-col items-center sm:items-stretch sm:flex-row sm:flex-wrap gap-5">
+        <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 items-center sm:items-stretch gap-4">
           {selectedProjects.map((project: Project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
@@ -119,14 +116,41 @@ export default function Home() {
           technologies:
         </p>
         <div className="mt-4 flex flex-row flex-wrap gap-4">
-          <Javascript />
-          <Reactjs />
-          <Typescript />
-          <Nodejs />
-          <Expressjs />
-          <Nextjs />
-          <Mongodb />
-          <Tailwind />
+          {stacks.map((stack) => {
+            if (stack.image) {
+              if (stack.name === "Nextjs") {
+                return (
+                  <Image
+                    key={stack.id}
+                    src={darkMode ? "/icons/nextjs_white.svg" : stack.image}
+                    alt={stack.name}
+                    width={90}
+                    height={90}
+                  />
+                );
+              } else if (stack.name === "Express") {
+                return (
+                  <Image
+                    key={stack.id}
+                    src={darkMode ? "/icons/expressjs_white.svg" : stack.image}
+                    alt={stack.name}
+                    width={90}
+                    height={90}
+                  />
+                );
+              }
+
+              return (
+                <Image
+                  key={stack.id}
+                  src={stack.image}
+                  alt={stack.name}
+                  width={90}
+                  height={90}
+                />
+              );
+            }
+          })}
         </div>
       </div>
       <div className="mt-5 py-[80px]" id="skills">
