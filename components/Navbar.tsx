@@ -6,7 +6,7 @@ import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
 import { DiGithubBadge } from "react-icons/di";
 import { useDispatch, useSelector } from "react-redux";
-import { setDarkMode } from "../redux/dark-mode/action/action";
+import { setDarkMode } from "../app/redux/dark-mode/action/action";
 
 export default function Navbar() {
   const dispatch = useDispatch();
@@ -14,11 +14,11 @@ export default function Navbar() {
     (state: { darkMode: boolean }) => state.darkMode
   );
 
-  function toogleDarkMode() {
+  function togleDarkMode() {
     dispatch(setDarkMode());
   }
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     localStorage.theme === "dark" && dispatch(setDarkMode());
   }, [dispatch]);
 
@@ -59,12 +59,13 @@ export default function Navbar() {
           </Link>
           <button
             className="sm:pr-5 sm:border-r-2 sm:border-gray"
-            onClick={toogleDarkMode}
+            onClick={togleDarkMode}
           >
             <DarkModeToggle darkMode={darkMode} />
           </button>
           <Link
-            href="/Tyson_Monteiro_CV.pdf"
+            href="https://github.com/TaysonGermano/tyson-monteiro"
+            target="_blank"
             className="text-[#a2a8b3] hover:text-[#64748B]"
           >
             <DiGithubBadge size={30} />

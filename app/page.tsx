@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import ProjectCard from "./components/ProjectCard";
-import { Project } from "./components/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
+import { Project } from "../components/ProjectCard";
 import Image from "next/image";
-import InfoCard from "./components/InfoCard";
-import Chip from "./components/Chip";
-import projects from "./data/projects.json";
-import stacks from "./data/stacks.json";
+import InfoCard from "../components/InfoCard";
+import Chip from "../components/Chip";
+import projects from "../data/projects.json";
+import stacks from "../data/stacks.json";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 
@@ -116,41 +116,24 @@ export default function Home() {
           technologies:
         </p>
         <div className="mt-4 flex flex-row flex-wrap gap-4">
-          {stacks.map((stack) => {
-            if (stack.image) {
-              if (stack.name === "Nextjs") {
-                return (
-                  <Image
-                    key={stack.id}
-                    src={darkMode ? "/icons/nextjs_white.svg" : stack.image}
-                    alt={stack.name}
-                    width={90}
-                    height={90}
-                  />
-                );
-              } else if (stack.name === "Express") {
-                return (
-                  <Image
-                    key={stack.id}
-                    src={darkMode ? "/icons/expressjs_white.svg" : stack.image}
-                    alt={stack.name}
-                    width={90}
-                    height={90}
-                  />
-                );
-              }
-
-              return (
+          {stacks.map(
+            (stack) =>
+              stack.image && (
                 <Image
                   key={stack.id}
-                  src={stack.image}
+                  src={
+                    darkMode && (stack.id === 3 || stack.id === 17)
+                      ? `/icons/${stack.name.toLowerCase()}${
+                          darkMode ? "_white" : ""
+                        }.svg`
+                      : stack.image
+                  }
                   alt={stack.name}
                   width={90}
                   height={90}
                 />
-              );
-            }
-          })}
+              )
+          )}
         </div>
       </div>
       <div className="mt-5 py-[80px]" id="skills">
