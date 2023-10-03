@@ -1,7 +1,4 @@
-import React from "react";
 
-export default function Nodejs() {
-  return (
     <svg
       height="90"
       preserveAspectRatio="xMidYMid"
@@ -14,5 +11,3 @@ export default function Nodejs() {
         fill="#539e43"
       />
     </svg>
-  );
-}

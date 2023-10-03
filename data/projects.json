@@ -26,9 +26,10 @@
         "name": "MUI"
       }
     ],
-    "tag": "Completed",
+    "tag": "",
     "access": "Public",
-    "link": "https://www.playlistgenius.app/"
+    "link": "https://www.playlistgenius.app/",
+    "image": "/playlistgenius.png"
   },
   {
     "id": 2,
@@ -53,9 +54,10 @@
         "name": "PHP"
       }
     ],
-    "tag": "Completed",
+    "tag": "",
     "access": "Public",
-    "link": "https://activityhub.travel/"
+    "link": "https://activityhub.travel/",
+    "image": "/activityhub.png"
   },
   {
     "id": 3,
@@ -76,9 +78,10 @@
         "name": "React Native Paper"
       }
     ],
-    "tag": "Completed",
+    "tag": "",
     "access": "Private",
-    "link": "https://play.google.com/store/apps/details?id=com.hostagents.hostagentsformanagers&pli=1"
+    "link": "https://play.google.com/store/apps/details?id=com.hostagents.hostagentsformanagers&pli=1",
+    "image": "/hostagentsformanagers.png"
   },
   {
     "id": 4,
@@ -107,9 +110,10 @@
         "name": "Redux"
       }
     ],
-    "tag": "Completed",
+    "tag": "",
     "access": "Private",
-    "link": ""
+    "link": "",
+    "image": "/hostagentsredbacked.png"
   },
   {
     "id": 5,
@@ -144,7 +148,8 @@
     ],
     "tag": "Coming soon",
     "access": "Public",
-    "link": ""
+    "link": "",
+    "image": "/holidayapartments.png"
   },
   {
     "id": 6,
@@ -179,7 +184,8 @@
     ],
     "tag": "Coming soon",
     "access": "Public",
-    "link": ""
+    "link": "",
+    "image": "/guidemetours.png"
   },
   {
     "id": 7,
@@ -202,11 +208,16 @@
       {
         "id": 4,
         "name": "Tailwind CSS"
+      },
+      {
+        "id": 15,
+        "name": "Redux"
       }
     ],
-    "tag": "Completed",
+    "tag": "",
     "access": "Public",
-    "link": "https://tysonmonteiro.com/"
+    "link": "https://tysonmonteiro.com/",
+    "image": "/tysonmonteirowebsite.png"
   },
   {
     "id": 8,
@@ -223,8 +234,9 @@
         "name": "Styled Components"
       }
     ],
-    "tag": "Completed",
+    "tag": "",
     "access": "Public",
-    "link": "https://simpleinvoicedemo.netlify.app/"
+    "link": "https://simpleinvoicedemo.netlify.app/",
+    "image": "/invoiceapp.png"
   }
 ]

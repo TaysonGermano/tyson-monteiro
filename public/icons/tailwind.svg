@@ -1,7 +1,4 @@
-import React from "react";
 
-export default function Tailwind() {
-  return (
     <svg
       height="90"
       preserveAspectRatio="xMidYMid"
@@ -18,5 +15,3 @@ export default function Tailwind() {
         fill="url(#a)"
       />
     </svg>
-  );
-}
