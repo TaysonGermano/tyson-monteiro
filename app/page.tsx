@@ -24,38 +24,50 @@ export default function Home() {
     (state: { darkMode: boolean }) => state.darkMode
   );
 
+  /**
+   * Handles the filtering of projects based on the selected stack ID.
+   * @param id - The ID of the selected stack. If id is 0, all stacks are selected.
+   */
   const handleFilter = (id: number) => {
+    // If all stacks are selected (id is 0), reset filters and projects
     if (id === 0) {
-      setFilter([...stacks]);
-      setSelectedProjects([...projects]);
+      setFilter([...stacks]); // Reset filters to include all stacks
+      setSelectedProjects([...projects]); // Reset selected projects to include all projects
       return;
     }
 
+    // Create new filters array with updated active status based on the selected stack ID
     const newFilters = filters.map((filter: filter) => ({
       ...filter,
       active: id === filter.id ? true : false,
     }));
 
+    // Extract IDs of active stacks from the new filters
     const activeStacks = newFilters
       .filter((filter: filter) => filter.active)
       .map((filter: filter) => filter.id);
 
+    // Initialize an array to store filtered projects
     let filteredProjects: Project[] = [];
 
+    // Iterate through each project
     projects.forEach((project: Project) => {
       for (const stack of project.stack) {
+        // Check if the project is not already in the filteredProjects array
         const filteredProjs = filteredProjects.find(
           (filteredProj: Project) => filteredProj.id === project.id
         );
 
+        // Add the project to filteredProjects if its stack is active
         if (!filteredProjs && activeStacks.includes(stack.id)) {
           filteredProjects.push(project);
         }
       }
     });
 
-    setFilter(newFilters);
-    setSelectedProjects(filteredProjects);
+    // Update state with new filters and selected projects
+    setFilter(newFilters); // Update filters
+    setSelectedProjects(filteredProjects); // Update selected projects
   };
 
   return (
