@@ -14,11 +14,20 @@ export default function Navbar() {
     (state: { darkMode: boolean }) => state.darkMode
   );
 
-  function togleDarkMode() {
-    dispatch(setDarkMode());
+  /**
+   * Toggles the dark mode by dispatching the setDarkMode action.
+   */
+  function toggleDarkMode() {
+    dispatch(setDarkMode()); // Dispatch the action to toggle dark mode
   }
 
+  /**
+   * React Hook to set dark mode based on the value stored in localStorage.
+   * It runs immediately after all DOM mutations. It checks if the theme in localStorage is "dark"
+   * and dispatches the setDarkMode action accordingly.
+   */
   React.useLayoutEffect(() => {
+    // Check if the theme in localStorage is "dark" and dispatch setDarkMode action
     localStorage.theme === "dark" && dispatch(setDarkMode());
   }, [dispatch]);
 
@@ -59,7 +68,7 @@ export default function Navbar() {
           </Link>
           <button
             className="sm:pr-5 sm:border-r-2 sm:border-gray"
-            onClick={togleDarkMode}
+            onClick={toggleDarkMode}
           >
             <DarkModeToggle darkMode={darkMode} />
           </button>

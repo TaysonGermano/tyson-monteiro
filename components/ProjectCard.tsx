@@ -21,7 +21,7 @@ export type Project = {
 
 export default function ProjectCard(props: Project) {
   return (
-    <div className="sm:max-w-[400px] shadow-md rounded-md transition-shadow bg-white dark:bg-slate-800 hover:shadow-xl ">
+    <div className="shadow-md rounded-md transition-shadow bg-white dark:bg-slate-800 hover:shadow-xl">
       <div className="h-[200px] relative bg-gray-200 rounded-t-md ">
         <Image
           src={props.image}
