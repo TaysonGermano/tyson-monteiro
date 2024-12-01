@@ -56,14 +56,14 @@
     ],
     "tag": "",
     "access": "Public",
-    "link": "https://activityhub.travel/",
+    "link": "https://activityhub.co.za/",
     "image": "/activityhub.png"
   },
   {
     "id": 3,
-    "name": "Host Agents for managers",
+    "name": "Host Agents for Property Hosts",
     "description": "My inaugural venture into React Native, Host Agents for Managers, stands as a testament to my early expertise. Tailored primarily for company employees engaged in property management, this versatile app is accessible on both Android and iOS platforms. Seamless fusion of functionality and user-friendly design.",
-    "role": "Frontend Developer",
+    "role": "Main Developer",
     "stack": [
       {
         "id": 12,
@@ -80,7 +80,7 @@
     ],
     "tag": "",
     "access": "Private",
-    "link": "https://play.google.com/store/apps/details?id=com.hostagents.hostagentsformanagers&pli=1",
+    "link": "https://play.google.com/store/apps/details?id=com.virtual_designs.hostagentsforpropertyhosts01",
     "image": "/hostagentsformanagers.png"
   },
   {
@@ -146,9 +146,9 @@
         "name": "Redux"
       }
     ],
-    "tag": "Coming soon",
+    "tag": "Staging",
     "access": "Public",
-    "link": "",
+    "link": "https://dev.holidayapartments.co.za/",
     "image": "/holidayapartments.png"
   },
   {
@@ -238,5 +238,29 @@
     "access": "Public",
     "link": "https://simpleinvoicedemo.netlify.app/",
     "image": "/invoiceapp.png"
+  },
+  {
+    "id": 9,
+    "name": "Host Agents for Owners",
+    "description": "Host Agents for Owners is a React Native app designed for property owners to manage their properties with ease. This app is a testament to my expertise in React Native, showcasing my ability to create user-friendly interfaces and seamless functionality.",
+    "role": "Main Developer",
+    "stack": [
+      {
+        "id": 12,
+        "name": "React Native"
+      },
+      {
+        "id": 13,
+        "name": "Expo Go"
+      },
+      {
+        "id": 14,
+        "name": "React Native Paper"
+      }
+    ],
+    "tag": "",
+    "access": "Private",
+    "link": "https://play.google.com/store/apps/details?id=com.virtual_designs.hostagentsforowners01",
+    "image": "/hosta_agents_for_owners.png"
   }
 ]
