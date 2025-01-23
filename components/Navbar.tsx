@@ -80,8 +80,7 @@ export default function Navbar() {
             <DiGithubBadge size={30} />
           </Link>
           <Link
-            href="/Tyson_Monteiro_CV.pdf"
-            download="Tyson_Monteiro_CV.pdf"
+            href="https://docs.google.com/document/d/1sNdd2IUSSFdoSkFhVeyAFFE_Wtazhtz5C_F88zNRGbU/edit?usp=sharing"
             target="_blank"
             className="hidden px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase sm:inline hover:text-white"
           >

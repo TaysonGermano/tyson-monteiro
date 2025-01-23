@@ -160,7 +160,7 @@ export default function Home() {
             title="Skills"
             htlm
             className="shadow-md dark:shadow-indigo-700"
-            description="My tech toolkit includes strong proficiency in <strong>JavaScript</strong>, <strong>React</strong>, <strong>React Native</strong>, <strong>Expo Go</strong>, <strong>Node.js</strong>, <strong>MongoDB</strong>, <strong>Nextjs</strong>, <strong>Tailwind</strong>, <strong>TypeScript</strong>, <strong>Express</strong>, and more. I thrive in a variety of development environments, whether it's building the frontend magic with <strong>React</strong>, diving into backend intricacies with <strong>Node.js</strong> and <strong>MongoDB</strong> or building a fullstack application with <strong>Nextjs</strong>."
+            description="My tech toolkit includes strong proficiency in <strong>JavaScript</strong>, <strong>React</strong>, <strong>React Native</strong>, <strong>Expo Go</strong>, <strong>Node.js</strong>, <strong>MongoDB</strong>, <strong>Nextjs</strong>, <strong>Tailwind</strong>, <strong>TypeScript</strong>, <strong>Express</strong>, <strong>Lit Web Components</strong>, <strong>Storybook</strong>, <strong>Docker</strong> and more. I thrive in a variety of development environments, whether it's building the frontend magic with <strong>React</strong>, diving into backend intricacies with <strong>Node.js</strong> and <strong>MongoDB</strong> or building a fullstack application with <strong>Nextjs</strong>."
           />
           <InfoCard
             title="Why I code"
