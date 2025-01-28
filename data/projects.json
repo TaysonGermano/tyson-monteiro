@@ -63,7 +63,7 @@
     "id": 3,
     "name": "Host Agents for Property Hosts",
     "description": "My inaugural venture into React Native, Host Agents for Managers, stands as a testament to my early expertise. Tailored primarily for company employees engaged in property management, this versatile app is accessible on both Android and iOS platforms. Seamless fusion of functionality and user-friendly design.",
-    "role": "Main Developer",
+    "role": "Mobile Developer",
     "stack": [
       {
         "id": 12,
@@ -243,7 +243,7 @@
     "id": 9,
     "name": "Host Agents for Owners",
     "description": "Host Agents for Owners is a React Native app designed for property owners to manage their properties with ease. This app is a testament to my expertise in React Native, showcasing my ability to create user-friendly interfaces and seamless functionality.",
-    "role": "Main Developer",
+    "role": "Mobile Developer",
     "stack": [
       {
         "id": 12,
