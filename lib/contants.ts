@@ -1,0 +1,92 @@
+export const FILTERS = [
+  {
+    name: "All Projects",
+    active: true,
+    id: 0,
+  },
+  {
+    name: "Reactjs",
+    active: false,
+    id: 1,
+  },
+  {
+    name: "Typescript",
+    active: false,
+    id: 2,
+  },
+  {
+    name: "Nextjs",
+    active: false,
+    id: 3,
+  },
+  {
+    name: "Tailwind CSS",
+    active: false,
+    id: 4,
+  },
+  {
+    name: "Nodejs",
+    active: false,
+    id: 5,
+  },
+  {
+    name: "Mongodb",
+    active: false,
+    id: 6,
+  },
+  {
+    name: "MUI",
+    active: false,
+    id: 7,
+  },
+  {
+    name: "Javascript",
+    active: false,
+    id: 8,
+  },
+  {
+    name: "Jquery",
+    active: false,
+    id: 9,
+  },
+  {
+    name: "My SQL",
+    active: false,
+    id: 10,
+  },
+  {
+    name: "PHP",
+    active: false,
+    id: 11,
+  },
+  {
+    name: "React Native",
+    active: false,
+    id: 12,
+  },
+  {
+    name: "Expo Go",
+    active: false,
+    id: 13,
+  },
+  {
+    name: "React Native Paper",
+    active: false,
+    id: 14,
+  },
+  {
+    name: "Redux",
+    active: false,
+    id: 15,
+  },
+  {
+    name: "Styled Components",
+    active: false,
+    id: 16,
+  },
+  {
+    name: "Express",
+    active: false,
+    id: 17,
+  },
+];

@@ -3,8 +3,6 @@ import StoreProvider from "./redux/StoreProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "../components/Navbar";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
-import Link from "next/link";
 import ScroolToTop from "../components/ScroolToTop";
 import Footer from "@/components/Footer";
 
