@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { Project } from "@/components/ProjectCard";
 import Chip from "@/components/Chip";
-import projects from "@/data/projects.json";
+import { PROJECTS } from "@/lib/contants";
 import { FILTERS } from "@/lib/contants";
 
 type filter = {
@@ -13,12 +13,12 @@ type filter = {
 
 export default function Projects() {
   const [filters, setFilter] = React.useState([...FILTERS]);
-  const [selectedProjects, setSelectedProjects] = React.useState([...projects]);
+  const [selectedProjects, setSelectedProjects] = React.useState([...PROJECTS]);
 
   const handleFilter = (id: number) => {
     if (id === 0) {
       setFilter([...FILTERS]);
-      setSelectedProjects([...projects]);
+      setSelectedProjects([...PROJECTS]);
       return;
     }
 
@@ -33,7 +33,7 @@ export default function Projects() {
 
     let filteredProjects: Project[] = [];
 
-    projects.forEach((project: Project) => {
+    PROJECTS.forEach((project: Project) => {
       for (const stack of project.stack) {
         const filteredProjs = filteredProjects.find(
           (filteredProj: Project) => filteredProj.id === project.id
