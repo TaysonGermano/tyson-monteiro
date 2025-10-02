@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import Navbar from "../components/Navbar";
 import ScroolToTop from "../components/ScroolToTop";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <StoreProvider>
+      <Analytics />
       <html lang="en">
         <body
           className={`${inter.className} dark:bg-[#0F172A] dark:text-slate-300`}
