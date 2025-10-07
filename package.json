@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
