@@ -55,7 +55,7 @@ export default function Navbar() {
             href="mailto:taysongermano@gmail.com"
             className="text-sm font-bold"
           >
-            Contact
+            My Contact
           </Link>
           <button
             className="sm:pr-5 sm:border-r-2 sm:border-gray"
