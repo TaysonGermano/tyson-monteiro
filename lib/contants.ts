@@ -316,9 +316,9 @@ export const PROJECTS = [
         name: "Redux",
       },
     ],
-    tag: "Staging",
+    tag: "",
     access: "Public",
-    link: "https://dev.holidayapartments.co.za/",
+    link: "https://www.holidayapartments.co.za/",
     image: "/holidayapartments.png",
   },
   {
