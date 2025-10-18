@@ -136,6 +136,43 @@ export const PROJECTS = [
     image: "/yenzaprep.png",
   },
   {
+    id: 7,
+    name: "Holiday Apartments",
+    description:
+      "Holiday Apartments is your go-to booking platform for delightful short-term rentals. Following the footsteps of Airbnb and Booking.com, they provide an array of listings across South Africa, ensuring you find the perfect accommodation for your stay.",
+    role: "Frontend Developer",
+    stack: [
+      {
+        id: 3,
+        name: "Nextjs",
+      },
+      {
+        id: 1,
+        name: "Reactjs",
+      },
+      {
+        id: 7,
+        name: "MUI",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+      },
+      {
+        id: 10,
+        name: "My SQL",
+      },
+      {
+        id: 15,
+        name: "Redux",
+      },
+    ],
+    tag: "",
+    access: "Public",
+    link: "https://www.holidayapartments.co.za/",
+    image: "/holidayapartments.png",
+  },
+  {
     id: 2,
     name: "PlaylistGenius",
     description:
@@ -279,47 +316,6 @@ export const PROJECTS = [
     access: "Private",
     link: "",
     image: "/hostagentsredbacked.png",
-  },
-  {
-    id: 7,
-    name: "Holiday Apartments",
-    description:
-      "Holiday Apartments is your go-to booking platform for delightful short-term rentals. Following the footsteps of Airbnb and Booking.com, they provide an array of listings across South Africa, ensuring you find the perfect accommodation for your stay.",
-    role: "Frontend Developer",
-    stack: [
-      {
-        id: 3,
-        name: "Nextjs",
-      },
-      {
-        id: 1,
-        name: "Reactjs",
-      },
-      {
-        id: 7,
-        name: "MUI",
-      },
-      {
-        id: 11,
-        name: "PHP",
-      },
-      {
-        id: 2,
-        name: "Typescript",
-      },
-      {
-        id: 10,
-        name: "My SQL",
-      },
-      {
-        id: 15,
-        name: "Redux",
-      },
-    ],
-    tag: "",
-    access: "Public",
-    link: "https://www.holidayapartments.co.za/",
-    image: "/holidayapartments.png",
   },
   {
     id: 8,
