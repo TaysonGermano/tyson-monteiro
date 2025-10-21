@@ -286,7 +286,7 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    name: "Host Agents Red (backend)",
+    name: "Host Agents Dashboard",
     description:
       "In response to the company's vision for an enhanced business system, I spearheaded the transformation of their antiquated PHP backend to a modern React.js version. This revamped system integrates with their existing PHP/Laravel API, facilitating secure and efficient data transfer.",
     role: "Frontend Developer",
@@ -353,59 +353,5 @@ export const PROJECTS = [
     access: "Public",
     link: "",
     image: "/guidemetours.png",
-  },
-  {
-    id: 9,
-    name: "Tyson Monteiro - Portfolio",
-    description:
-      "This platform is a personal showcase I meticulously developed to provide a glimpse into my work for potential customers, recruiters, and anyone interested in learning more about me. Here you can explore my journey and discover where I stand as a developer.",
-    role: "Full-stack Developer",
-    stack: [
-      {
-        id: 3,
-        name: "Nextjs",
-      },
-      {
-        id: 1,
-        name: "Reactjs",
-      },
-      {
-        id: 2,
-        name: "Typescript",
-      },
-      {
-        id: 4,
-        name: "Tailwind CSS",
-      },
-      {
-        id: 15,
-        name: "Redux",
-      },
-    ],
-    tag: "",
-    access: "Public",
-    link: "https://tysonmonteiro.vercel.app/",
-    image: "/tysonmonteirowebsite.png",
-  },
-  {
-    id: 10,
-    name: "Invoice App",
-    description:
-      "A simple yet powerful invoice app, crafted as a challenge from frontendmentor.io. This creation stands as a testament to my prowess in React Context, showcasing intricate user interface design with styled components, and a seamless implementation of CRUD functionalities.",
-    role: "Full-stack Developer",
-    stack: [
-      {
-        id: 1,
-        name: "Reactjs",
-      },
-      {
-        id: 16,
-        name: "Styled Components",
-      },
-    ],
-    tag: "",
-    access: "Public",
-    link: "https://simpleinvoicedemo.netlify.app/",
-    image: "/invoiceapp.png",
   },
 ];
