@@ -1,14 +1,16 @@
 import Docker from "@/components/logos/Docker";
 import Expressjs from "@/components/logos/Exp";
+import { Git } from "@/components/logos/Git";
 import Hono from "@/components/logos/Hono";
 import MongoDB from "@/components/logos/MongoDb";
 import Nextjs from "@/components/logos/Nextjs";
 import Nodejs from "@/components/logos/Node";
+import { PostgreSQL } from "@/components/logos/Postgres";
 import Reactjs from "@/components/logos/Reactjs";
 import TailwindCSS from "@/components/logos/Tailwindcss";
 import TypeScript from "@/components/logos/Typescript";
+import { Vite } from "@/components/logos/Vite";
 import React from "react";
-import { types } from "util";
 
 const stackList = {
   typescript: <TypeScript />,
@@ -20,6 +22,9 @@ const stackList = {
   mongodb: <MongoDB />,
   express: <Expressjs />,
   docker: <Docker />,
+  postgres: <PostgreSQL />,
+  vite: <Vite />,
+  git: <Git />,
 };
 
 export default function Stack() {

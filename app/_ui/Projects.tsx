@@ -64,7 +64,7 @@ export default function Projects() {
           />
         ))}
       </div>
-      <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 items-center sm:items-stretch gap-4">
+      <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4">
         {selectedProjects.map((project: Project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

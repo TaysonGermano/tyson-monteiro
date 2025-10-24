@@ -14,7 +14,7 @@ export default function Skills() {
           title="Skills"
           htlm
           className="shadow-md dark:shadow-indigo-700"
-          description="My tech toolkit includes strong proficiency in <strong>JavaScript</strong>, <strong>React</strong>, <strong>React Native</strong>, <strong>Expo Go</strong>, <strong>Node.js</strong>, <strong>MongoDB</strong>, <strong>Nextjs</strong>, <strong>Tailwind</strong>, <strong>TypeScript</strong>, <strong>Express</strong>, <strong>Lit Web Components</strong>, <strong>Storybook</strong>, <strong>Docker</strong> and more. I thrive in a variety of development environments, whether it's building the frontend magic with <strong>React</strong>, diving into backend intricacies with <strong>Node.js</strong> and <strong>MongoDB</strong> or building a fullstack application with <strong>Nextjs</strong>."
+          description="My tech toolkit includes strong proficiency in <strong>Typescript</strong>, <strong>React.js</strong> <strong>Tailwindcss</strong>, <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong>, <strong>PostgreSQL</strong>, <strong>Jest</strong>, <strong>Playwright</strong>, <strong>CI/CD</strong>, <strong>Docker</strong>, and more. I’m comfortable across the full development lifecycle—crafting intuitive frontends with React, building robust backends with Node.js and MongoDB or PostgreSQL, and delivering end-to-end full-stack solutions with Next.js."
         />
         <InfoCard
           title="Why I code"
