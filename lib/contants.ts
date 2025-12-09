@@ -203,7 +203,7 @@ export const PROJECTS = [
     tag: "",
     access: "Public",
     link: "https://www.playlistgenius.app/",
-    image: "/playlistgenius.png",
+    image: "/screenshot-playlistgenius-v2.png",
   },
   {
     id: 3,
