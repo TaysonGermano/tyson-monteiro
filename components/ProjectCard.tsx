@@ -65,14 +65,14 @@ export default function ProjectCard(props: Project) {
             {props.access}
           </span>
         </p>
-        <p className="text-sm">
+        {/* <p className="text-sm">
           <b>Stack:</b>{" "}
           <span className="text-slate-500 dark:text-slate-400">
             {props.stack.map((stack: Stack, i: number, arr: Stack[]) =>
               i !== arr.length - 1 ? `${stack.name}, ` : `${stack.name}`
             )}
           </span>
-        </p>
+        </p> */}
         {props.link && (
           <Link
             href={props.link}

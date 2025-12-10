@@ -40,11 +40,6 @@ export const FILTERS = [
     id: 7,
   },
   {
-    name: "Javascript",
-    active: false,
-    id: 8,
-  },
-  {
     name: "Jquery",
     active: false,
     id: 9,
@@ -80,16 +75,6 @@ export const FILTERS = [
     id: 15,
   },
   {
-    name: "Styled Components",
-    active: false,
-    id: 16,
-  },
-  {
-    name: "Express",
-    active: false,
-    id: 17,
-  },
-  {
     name: "Zustand",
     active: false,
     id: 18,
@@ -98,6 +83,26 @@ export const FILTERS = [
     name: "AI",
     active: false,
     id: 19,
+  },
+  {
+    name: "Postgres",
+    active: false,
+    id: 20,
+  },
+  {
+    name: "Neon",
+    active: false,
+    id: 21,
+  },
+  {
+    name: "Drizzle ORM",
+    active: false,
+    id: 22,
+  },
+  {
+    name: "Better Auth",
+    active: false,
+    id: 23,
   },
 ];
 
@@ -128,6 +133,14 @@ export const PROJECTS = [
       {
         id: 18,
         name: "Zustand",
+      },
+      {
+        id: 5,
+        name: "Nodejs",
+      },
+      {
+        id: 1,
+        name: "Reactjs",
       },
     ],
     tag: "",
@@ -184,20 +197,36 @@ export const PROJECTS = [
         name: "Nextjs",
       },
       {
-        id: 1,
-        name: "Reactjs",
-      },
-      {
         id: 2,
         name: "Typescript",
       },
       {
-        id: 6,
-        name: "Mongodb",
+        id: 20,
+        name: "Postgres",
       },
       {
         id: 19,
         name: "AI",
+      },
+      {
+        id: 21,
+        name: "Neon",
+      },
+      {
+        id: 22,
+        name: "Drizzle ORM",
+      },
+      {
+        id: 23,
+        name: "Better Auth",
+      },
+      {
+        id: 4,
+        name: "Tailwind CSS",
+      },
+      {
+        id: 1,
+        name: "Reactjs",
       },
     ],
     tag: "",
