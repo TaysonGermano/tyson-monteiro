@@ -33,18 +33,18 @@ export default function Stack() {
   return (
     <div id="stack">
       <h2 className="text-2xl font-bold">My Stack</h2>
-      <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 ">
+      <p className="text-sm text-slate-500 dark:text-slate-400 mt-3 ">
         I specialize in building web applications using a robust stack of
         technologies:
       </p>
 
-      <div className="mt-4 flex flex-wrap gap-6">
+      <div className="mt-4 flex flex-wrap gap-2">
         {Object.entries(stackList).map(([name, component]) => (
           <div
             key={name}
-            className="w-19 h-19 flex items-center justify-center"
+            className="w-20 h-20 flex items-center justify-center"
           >
-            {React.cloneElement(component, { className: "w-12 h-12" })}
+            {React.cloneElement(component, { className: "w-15 h-15" })}
           </div>
         ))}
       </div>

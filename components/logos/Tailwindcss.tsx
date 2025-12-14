@@ -5,7 +5,7 @@ const TailwindCSS = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 54 33"
     className={`w-full h-full ${props.className ?? ""}`}
   >
-    <g clip-path="url(#tailwindcss__a)">
+    <g>
       <path
         fill="#38bdf8"
         fillRule="evenodd"
