@@ -10,6 +10,7 @@ import Reactjs from "@/components/logos/Reactjs";
 import TailwindCSS from "@/components/logos/Tailwindcss";
 import TypeScript from "@/components/logos/Typescript";
 import { Vite } from "@/components/logos/Vite";
+import WordPress from "@/components/logos/WordPress";
 import React from "react";
 
 const stackList = {
@@ -25,11 +26,12 @@ const stackList = {
   postgres: <PostgreSQL />,
   vite: <Vite />,
   git: <Git />,
+  wordPress: <WordPress />,
 };
 
 export default function Stack() {
   return (
-    <div className="mt-5 pt-[80px]" id="stack">
+    <div id="stack">
       <h2 className="text-2xl font-bold">My Stack</h2>
       <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 ">
         I specialize in building web applications using a robust stack of
@@ -40,9 +42,9 @@ export default function Stack() {
         {Object.entries(stackList).map(([name, component]) => (
           <div
             key={name}
-            className="w-20 h-20 flex items-center justify-center"
+            className="w-19 h-19 flex items-center justify-center"
           >
-            {React.cloneElement(component, { className: "w-16 h-16" })}
+            {React.cloneElement(component, { className: "w-12 h-12" })}
           </div>
         ))}
       </div>

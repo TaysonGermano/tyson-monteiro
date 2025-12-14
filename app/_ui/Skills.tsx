@@ -2,7 +2,7 @@ import InfoCard from "@/components/InfoCard";
 
 export default function Skills() {
   return (
-    <div className="mt-5 py-[80px]" id="skills">
+    <div id="skills">
       <h2 className="text-2xl font-bold">More About Me</h2>
       <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 ">
         I&apos;m a highly skilled and results-driven Full-Stack Developer with a

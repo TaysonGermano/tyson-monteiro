@@ -36,6 +36,14 @@ export default function Navbar() {
             Projects
           </ScrollLink>
           <ScrollLink
+            to="services"
+            smooth={true}
+            duration={500}
+            className="text-sm font-bold hover:cursor-pointer"
+          >
+            Services
+          </ScrollLink>
+          <ScrollLink
             to="stack"
             smooth={true}
             duration={500}

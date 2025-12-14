@@ -1,3 +1,5 @@
+import { ArrowLeftRight, CloudSync, TabletSmartphone } from "lucide-react";
+
 export const FILTERS = [
   {
     name: "All Projects",
@@ -382,5 +384,26 @@ export const PROJECTS = [
     access: "Public",
     link: "",
     image: "/guidemetours.png",
+  },
+];
+
+export const SERVICES = [
+  {
+    title: "Web Development",
+    description:
+      "Building responsive and dynamic websites, web apps, and landing pages using modern technologies.",
+    icon: <CloudSync size={50} />,
+  },
+  {
+    title: "API Development",
+    description:
+      "Designing and implementing robust RESTful APIs to power your applications.",
+    icon: <ArrowLeftRight size={50} />,
+  },
+  {
+    title: "Mobile App Development",
+    description:
+      "Developing scalable mobile applications with seamless user experiences and secure integrations.",
+    icon: <TabletSmartphone size={50} />,
   },
 ];
