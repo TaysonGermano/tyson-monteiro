@@ -51,14 +51,14 @@ export default function Navbar() {
           >
             Stack
           </ScrollLink>
-          <ScrollLink
+          {/* <ScrollLink
             to="skills"
             smooth={true}
             duration={500}
             className="text-sm font-bold hover:cursor-pointer"
           >
             Skills
-          </ScrollLink>
+          </ScrollLink> */}
           <Link
             href="mailto:taysongermano@gmail.com"
             className="text-sm font-bold"
