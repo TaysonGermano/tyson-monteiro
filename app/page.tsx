@@ -13,9 +13,7 @@ export default function Home() {
     <div className="pt-5 flex flex-col gap-14">
       <Hero />
       <Projects />
-      <Services />
       <Stack />
-      <HireMe />
     </div>
   );
 }
