@@ -14,8 +14,7 @@ export default function Hero() {
           React.
         </h1>
         <Link
-          href="/Tyson_Monteiro_CV.pdf"
-          download="Tyson_Monteiro_CV.pdf"
+          href="https://rxresu.me/taysongermano/frontend-engineer"
           target="_blank"
           className="sm:hidden inline-block mt-3 px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase hover:text-white"
         >
