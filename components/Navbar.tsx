@@ -11,7 +11,7 @@ import { setDarkMode } from "../app/redux/dark-mode/action/action";
 export default function Navbar() {
   const dispatch = useDispatch();
   const darkMode = useSelector(
-    (state: { darkMode: boolean }) => state.darkMode
+    (state: { darkMode: boolean }) => state.darkMode,
   );
 
   function toggleDarkMode() {
@@ -63,7 +63,7 @@ export default function Navbar() {
             <DiGithubBadge size={30} />
           </Link>
           <Link
-            href="https://docs.google.com/document/d/1sNdd2IUSSFdoSkFhVeyAFFE_Wtazhtz5C_F88zNRGbU/edit?usp=sharing"
+            href="https://rxresu.me/taysongermano/frontend-engineer"
             target="_blank"
             className="hidden px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase sm:inline hover:text-white"
           >

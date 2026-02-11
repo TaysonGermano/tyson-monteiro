@@ -9,7 +9,7 @@ export default function Hero() {
           Tyson Monteiro - Frontend Developer
         </p>
         <h1 className="text-[1.75rem] font-extrabold  text-slate-900 dark:text-white md:text-4xl">
-          Hey there! I&apos;m Tyson Monteiro, a Software Developer who loves
+          Hey there! I&apos;m Tyson Monteiro, a Frontend Engineer who loves
           building scalable web and mobile applications using TypeScript and
           React.
         </h1>

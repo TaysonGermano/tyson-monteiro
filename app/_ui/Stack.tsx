@@ -1,4 +1,5 @@
 import Laravel from "@/components/logos/Laravel";
+import MongoDB from "@/components/logos/MongoDb";
 import Nextjs from "@/components/logos/Nextjs";
 import Nodejs from "@/components/logos/Node";
 import { PostgreSQL } from "@/components/logos/Postgres";
@@ -12,7 +13,7 @@ const stackList = {
   nextjs: <Nextjs />,
   nodejs: <Nodejs />,
   postgres: <PostgreSQL />,
-  laravel: <Laravel />,
+  mongodb: <MongoDB />,
 };
 
 export default function Stack() {
@@ -22,7 +23,6 @@ export default function Stack() {
       <p className="text-sm text-slate-500 dark:text-slate-400 mt-3 ">
         These are the main technologies I use in my projects:
       </p>
-
       <div className="mt-4 flex flex-wrap gap-2">
         {Object.entries(stackList).map(([name, component]) => (
           <div
