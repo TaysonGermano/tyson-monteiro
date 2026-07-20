@@ -6,15 +6,15 @@ export default function Hero() {
     <div className="flex flex-col-reverse sm:flex-row py-7 sm:justify-between items-center">
       <div className="hero-content sm:w-[600px] text-center sm:text-left">
         <p className="mt-6 text-sm text-slate-500 dark:text-slate-400 mb-2">
-          Tyson Monteiro - Frontend Developer
+          Tyson Monteiro - Fullstack Developer
         </p>
         <h1 className="text-[1.75rem] font-extrabold  text-slate-900 dark:text-white md:text-4xl">
-          Hey there! I&apos;m Tyson Monteiro, a Frontend Engineer who loves
-          building scalable web and mobile applications using TypeScript and
-          React.
+          Hey there! I&apos;m Tyson Monteiro, a Fullstack Developer who loves
+          building scalable web and mobile applications using TypeScript, React,
+          and Node.js.
         </h1>
         <Link
-          href="https://rxresu.me/taysongermano/frontend-engineer"
+          href="https://rxresu.me/taysongermano/fullstack-developer"
           target="_blank"
           className="sm:hidden inline-block mt-3 px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase hover:text-white"
         >
