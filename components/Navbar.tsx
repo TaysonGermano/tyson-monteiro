@@ -63,7 +63,7 @@ export default function Navbar() {
             <DiGithubBadge size={30} />
           </Link>
           <Link
-            href="https://rxresu.me/taysongermano/frontend-engineer"
+            href="https://rxresu.me/taysongermano/fullstack-developer"
             target="_blank"
             className="hidden px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase sm:inline hover:text-white"
           >
