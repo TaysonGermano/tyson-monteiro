@@ -10,7 +10,7 @@ import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tyson Monteiro - React Developer",
+  title: "Tyson Monteiro - Fullstack Developer",
   description: "Fullstack Javascript developer based in Cape Town South Africa",
 };
 
