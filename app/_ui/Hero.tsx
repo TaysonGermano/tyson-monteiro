@@ -1,36 +1,44 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const CV_URL = "https://rxresu.me/taysongermano/fullstack-developer";
+
 export default function Hero() {
   return (
-    <div className="flex flex-col-reverse sm:flex-row py-7 sm:justify-between items-center">
-      <div className="hero-content sm:w-[600px] text-center sm:text-left">
-        <p className="mt-6 text-sm text-slate-500 dark:text-slate-400 mb-2">
-          Tyson Monteiro - Fullstack Developer
+    <section className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-8 py-10">
+      <div className="max-w-xl text-center sm:text-left">
+        <p className="text-sm mb-3 text-black/60 dark:text-white/60">
+          Tyson Monteiro — Fullstack Developer
         </p>
-        <h1 className="text-[1.75rem] font-extrabold  text-slate-900 dark:text-white md:text-4xl">
-          Hey there! I&apos;m Tyson Monteiro, a Fullstack Developer who loves
-          building scalable web and mobile applications using TypeScript, React,
-          and Node.js.
+        <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+          Hey there! I&apos;m Tyson Monteiro, a fullstack developer who builds
+          scalable web and mobile applications using TypeScript, React and
+          Node.js.
         </h1>
-        <Link
-          href="https://rxresu.me/taysongermano/fullstack-developer"
-          target="_blank"
-          className="sm:hidden inline-block mt-3 px-4 py-2 bg-indigo-500 select-none text-white text-sm shadow-md rounded-md uppercase hover:text-white"
-        >
-          Download CV
-        </Link>
+        <div className="mt-6 flex flex-wrap items-center justify-center sm:justify-start gap-5">
+          <Link
+            href="/work-with-me"
+            className="no-underline rounded-md bg-black px-5 py-2.5 text-sm text-white dark:bg-white dark:text-black"
+          >
+            Work with me
+          </Link>
+          <Link href={CV_URL} target="_blank" className="text-sm">
+            Download CV
+          </Link>
+        </div>
       </div>
-      <div className="profile">
-        <div className="avatar w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full bg-gray-100 relative">
+
+      <div className="mx-auto sm:mx-0 shrink-0">
+        <div className="relative h-[220px] w-[220px] sm:h-[280px] sm:w-[280px] overflow-hidden rounded-2xl">
           <Image
             src="/tysonmonteiro.jpg"
-            alt="profile"
-            className="rounded-full object-contain"
+            alt="Tyson Monteiro"
             fill
+            priority
+            className="object-cover grayscale"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,24 +1,29 @@
-import React from "react";
 import Link from "next/link";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="mx-auto max-w-7xl px-4 py-5 mt-5 border-t dark:border-[#e2e8f00d]">
-      <p className="text-sm text-slate-300 text-center">
-        &copy; Tyson Monteiro {new Date().getFullYear()} &#183; built with ♥
-      </p>
-      <div className="flex justify-center gap-3 mt-3">
+    <footer className="mx-auto max-w-5xl px-4 py-8 mt-10 border-t border-black/15 dark:border-white/15">
+      <div className="flex justify-center gap-5">
         <Link
           href="https://www.linkedin.com/in/tyson-monteiro-59227a158/"
           target="_blank"
+          aria-label="LinkedIn"
+          className="no-underline text-black dark:text-white"
         >
-          <FaLinkedin size={20} color="#0b50b8" />
+          <Linkedin size={20} />
         </Link>
-        <Link href="mailto:taysongermano@gmail.com" target="_blank">
-          <FaEnvelope size={20} color="#cccccc" />
+        <Link
+          href="mailto:taysongermano@gmail.com"
+          aria-label="Email"
+          className="no-underline text-black dark:text-white"
+        >
+          <Mail size={20} />
         </Link>
       </div>
+      <p className="mt-4 text-sm text-center text-black/50 dark:text-white/50">
+        &copy; Tyson Monteiro {new Date().getFullYear()}
+      </p>
     </footer>
   );
 }

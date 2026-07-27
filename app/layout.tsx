@@ -1,7 +1,7 @@
 import "./globals.css";
-import StoreProvider from "./redux/StoreProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import ThemeProvider from "./theme/ThemeProvider";
 import Navbar from "../components/Navbar";
 import ScroolToTop from "../components/ScroolToTop";
 import Footer from "@/components/Footer";
@@ -11,8 +11,23 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tyson Monteiro - Fullstack Developer",
-  description: "Fullstack Javascript developer based in Cape Town South Africa",
+  description:
+    "Fullstack developer based in Cape Town, South Africa. Building web apps, mobile apps, APIs and websites — and available to work with you.",
 };
+
+// Runs before paint to set the correct theme class and avoid a flash.
+const themeScript = `
+(function () {
+  try {
+    var stored = localStorage.getItem("theme");
+    var isDark =
+      stored === "dark" ||
+      (stored !== "light" &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.classList.toggle("dark", isDark);
+  } catch (e) {}
+})();
+`;
 
 export default function RootLayout({
   children,
@@ -20,22 +35,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <StoreProvider>
-      <Analytics />
-      <html lang="en">
-        <body
-          className={`${inter.className} dark:bg-[#0F172A] dark:text-slate-300`}
-        >
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className={`${inter.className} bg-white text-black dark:bg-black dark:text-white`}>
+        <ThemeProvider>
+          <Analytics />
           <header>
-            <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:hidden"></div>
-            <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:hidden"></div>
             <Navbar />
           </header>
-          <main className="mx-auto max-w-7xl px-4">{children}</main>
+          <main className="mx-auto max-w-5xl px-4">{children}</main>
           <Footer />
           <ScroolToTop />
-        </body>
-      </html>
-    </StoreProvider>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }

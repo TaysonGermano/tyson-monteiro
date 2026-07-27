@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from "react";
+import React from "react";
 
 type Props = {
   active: boolean;
@@ -9,10 +9,10 @@ type Props = {
 export default function Chip(props: Props) {
   return (
     <button
-      className={`py-1 px-5 text-sm border rounded-full hover:cursor-pointer select-none ${
+      className={`py-1 px-4 text-sm rounded-full border border-black dark:border-white select-none transition-colors ${
         props.active
-          ? "bg-black text-white dark:bg-slate-800"
-          : "text-slate-500"
+          ? "bg-black text-white dark:bg-white dark:text-black"
+          : "bg-transparent text-black dark:text-white"
       }`}
       onClick={props.onClick}
     >

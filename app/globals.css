@@ -2,12 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+html {
+    scroll-behavior: smooth;
 }
 
-a:hover {
-    color: #6366F1
+/* Pure black & white. Dark mode reverts everything. */
+:root {
+    --paper: #ffffff;
+    --ink: #000000;
+}
+
+.dark {
+    --paper: #000000;
+    --ink: #ffffff;
+}
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+}
+
+/* Links: same font & colour as body text, underline only. */
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }

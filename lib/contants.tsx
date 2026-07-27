@@ -1,4 +1,13 @@
-import { ArrowLeftRight, CloudSync, TabletSmartphone } from "lucide-react";
+import {
+  Building2,
+  LayoutGrid,
+  Smartphone,
+  Server,
+  Globe,
+  Search,
+  Wrench,
+  LifeBuoy,
+} from "lucide-react";
 
 export const FILTERS = [
   {
@@ -112,6 +121,8 @@ export const PROJECTS = [
   {
     id: 1,
     name: "Yenza Prep",
+    slug: "yenza-prep",
+    blurb: "Online learning platform for Grade 6 & 7 students",
     description:
       "Yenza Prep is an innovative online learning platform built for Grade 6 & 7 students. It combines interactive quizzes, assessments, and exercises with personalized learning paths tailored to each learner’s interests and strengths. Students also gain access to career insights to help guide their future choices.",
     role: "Frontend Developer",
@@ -153,6 +164,8 @@ export const PROJECTS = [
   {
     id: 7,
     name: "Holiday Apartments",
+    slug: "holiday-apartments",
+    blurb: "Short-term rental booking platform",
     description:
       "Holiday Apartments is your go-to booking platform for delightful short-term rentals. Following the footsteps of Airbnb and Booking.com, they provide an array of listings across South Africa, ensuring you find the perfect accommodation for your stay.",
     role: "Frontend Developer",
@@ -190,6 +203,8 @@ export const PROJECTS = [
   {
     id: 2,
     name: "PlaylistGenius",
+    slug: "playlistgenius",
+    blurb: "AI-powered playlist generator for DJs & music lovers",
     description:
       "PlaylistGenius stands as the pioneering playlist generator, utilizing AI to craft personalized playlists tailored to the user's criteria. Perfect for DJs and music enthusiasts, it includes features like exporting to YouTube and Spotify, merging two or more playlists, and creating playlists based on mood, BPM, genre, and more.",
     role: "Full-stack Developer",
@@ -239,6 +254,8 @@ export const PROJECTS = [
   {
     id: 3,
     name: "Host Agents for Owners",
+    slug: "host-agents-for-owners",
+    blurb: "React Native app for property owners",
     description:
       "Host Agents for Owners is a React Native app designed for property owners to manage their properties with ease. This app is a testament to my expertise in React Native, showcasing my ability to create user-friendly interfaces and seamless functionality.",
     role: "Mobile Developer",
@@ -264,6 +281,8 @@ export const PROJECTS = [
   {
     id: 4,
     name: "Host Agents for Property Hosts",
+    slug: "host-agents-for-property-hosts",
+    blurb: "Cross-platform property management app",
     description:
       "My inaugural venture into React Native, Host Agents for Managers, stands as a testament to my early expertise. Tailored primarily for company employees engaged in property management, this versatile app is accessible on both Android and iOS platforms. Seamless fusion of functionality and user-friendly design.",
     role: "Mobile Developer",
@@ -289,6 +308,8 @@ export const PROJECTS = [
   {
     id: 5,
     name: "ActivityHub",
+    slug: "activityhub",
+    blurb: "Curated tours & activities platform in Cape Town",
     description:
       "ActivityHub is your premier platform for curated tours and activities. Nestled in the heart of Cape Town, ActivityHub has been dedicated to providing clients with the finest vacation experiences and more. Explore the wonders of South Africa, where each activity is crafted to make your journey truly memorable.",
     role: "Frontend Developer",
@@ -318,6 +339,8 @@ export const PROJECTS = [
   {
     id: 6,
     name: "Host Agents Dashboard",
+    slug: "host-agents-dashboard",
+    blurb: "Legacy PHP backend rebuilt in modern React",
     description:
       "In response to the company's vision for an enhanced business system, I spearheaded the transformation of their antiquated PHP backend to a modern React.js version. This revamped system integrates with their existing PHP/Laravel API, facilitating secure and efficient data transfer.",
     role: "Frontend Developer",
@@ -351,6 +374,8 @@ export const PROJECTS = [
   {
     id: 8,
     name: "GuideMe Tours",
+    slug: "guideme-tours",
+    blurb: "Luxury private tours platform (in progress)",
     description:
       "GuideMe Tours is a distinguished platform specializing in luxurious and private tours throughout Cape Town. Currently, I am fully engaged as a Fullstack developer, tasked with taking this project from inception to completion. Leveraging my expertise in UI/UX design and software engineering.",
     role: "Full-stack Developer",
@@ -389,21 +414,90 @@ export const PROJECTS = [
 
 export const SERVICES = [
   {
-    title: "Web Development",
+    title: "In-house software development",
     description:
-      "Building responsive and dynamic websites, web apps, and landing pages using modern technologies.",
-    icon: <CloudSync size={50} />,
+      "Custom internal tools and business systems built around how your team actually works.",
+    icon: <Building2 size={28} />,
   },
   {
-    title: "API Development",
+    title: "Web app development",
     description:
-      "Designing and implementing robust RESTful APIs to power your applications.",
-    icon: <ArrowLeftRight size={50} />,
+      "Fast, scalable web applications with clean, maintainable code and great UX.",
+    icon: <LayoutGrid size={28} />,
   },
   {
-    title: "Mobile App Development",
+    title: "Mobile app development",
     description:
-      "Developing scalable mobile applications with seamless user experiences and secure integrations.",
-    icon: <TabletSmartphone size={50} />,
+      "iOS and Android apps built from a single React Native codebase.",
+    icon: <Smartphone size={28} />,
+  },
+  {
+    title: "API & backend development",
+    description:
+      "Robust APIs and backend systems designed for reliability and scale.",
+    icon: <Server size={28} />,
+  },
+  {
+    title: "Website development",
+    description:
+      "Responsive, high-performing websites and landing pages that convert.",
+    icon: <Globe size={28} />,
+  },
+  {
+    title: "SEO",
+    description:
+      "Technical SEO and on-page optimization to help your site rank and get found.",
+    icon: <Search size={28} />,
+  },
+  {
+    title: "WordPress optimization & maintenance",
+    description:
+      "Speed, security and ongoing upkeep for existing WordPress websites.",
+    icon: <Wrench size={28} />,
+  },
+  {
+    title: "Rescue & Repair",
+    description:
+      "Diagnose and fix bugs, breakages and performance issues on any existing web app or website.",
+    icon: <LifeBuoy size={28} />,
+  },
+];
+
+export const STACK = [
+  {
+    name: "TypeScript",
+    description: "Typed JavaScript for safer, more maintainable code.",
+  },
+  {
+    name: "React",
+    description: "My core library for building interactive user interfaces.",
+  },
+  {
+    name: "Next.js",
+    description: "Full-stack React framework for fast, SEO-friendly apps.",
+  },
+  {
+    name: "React Native",
+    description: "One codebase shipping to both iOS and Android.",
+  },
+  {
+    name: "Node.js",
+    description: "JavaScript on the server for APIs and backend services.",
+  },
+  {
+    name: "PostgreSQL",
+    description: "Reliable relational database for structured data.",
+  },
+  {
+    name: "MongoDB",
+    description: "Flexible document database for fast-moving products.",
+  },
+  {
+    name: "Tailwind CSS",
+    description: "Utility-first styling for consistent, responsive design.",
+  },
+  {
+    name: "WordPress",
+    description: "Building, optimizing and maintaining WordPress websites.",
   },
 ];

@@ -1,19 +1,27 @@
 "use client";
 import React from "react";
-import { FaAngleUp } from "react-icons/fa";
-import { animateScroll as scroll } from "react-scroll";
+import { ArrowUp } from "lucide-react";
 
 export default function ScroolToTop() {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+  const [visible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  if (!visible) return null;
 
   return (
     <button
-      onClick={scrollToTop}
-      className="text-white bg-black dark:bg-indigo-500 flex flex-row justify-center items-center h-[40px] w-[40px] shadow-md rounded-full fixed bottom-5 right-10"
+      type="button"
+      aria-label="Scroll to top"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      className="fixed bottom-6 right-6 flex h-10 w-10 items-center justify-center rounded-full bg-black text-white dark:bg-white dark:text-black"
     >
-      <FaAngleUp size={20} />
+      <ArrowUp size={18} />
     </button>
   );
 }

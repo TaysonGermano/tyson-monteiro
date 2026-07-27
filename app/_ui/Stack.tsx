@@ -1,38 +1,26 @@
-import Laravel from "@/components/logos/Laravel";
-import MongoDB from "@/components/logos/MongoDb";
-import Nextjs from "@/components/logos/Nextjs";
-import Nodejs from "@/components/logos/Node";
-import { PostgreSQL } from "@/components/logos/Postgres";
-import Reactjs from "@/components/logos/Reactjs";
-import TypeScript from "@/components/logos/Typescript";
-import React from "react";
-
-const stackList = {
-  react: <Reactjs />,
-  typescript: <TypeScript />,
-  nextjs: <Nextjs />,
-  nodejs: <Nodejs />,
-  postgres: <PostgreSQL />,
-  mongodb: <MongoDB />,
-};
+import { STACK } from "@/lib/contants";
 
 export default function Stack() {
   return (
-    <div id="stack">
-      <h2 className="text-2xl font-bold">My Main Stack</h2>
-      <p className="text-sm text-slate-500 dark:text-slate-400 mt-3 ">
-        These are the main technologies I use in my projects:
+    <section className="scroll-mt-24" id="stack">
+      <h2 className="text-2xl font-bold">My stack</h2>
+      <p className="text-sm text-black/60 dark:text-white/60 mt-2">
+        The main technologies I reach for on my projects.
       </p>
-      <div className="mt-4 flex flex-wrap gap-2">
-        {Object.entries(stackList).map(([name, component]) => (
-          <div
-            key={name}
-            className="w-20 h-20 flex items-center justify-center"
+
+      <ul className="mt-6 border-t border-black/15 dark:border-white/15">
+        {STACK.map((tech) => (
+          <li
+            key={tech.name}
+            className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 border-b border-black/15 dark:border-white/15 py-4"
           >
-            {React.cloneElement(component, { className: "w-15 h-15" })}
-          </div>
+            <span className="font-semibold sm:w-40 shrink-0">{tech.name}</span>
+            <span className="text-sm text-black/60 dark:text-white/60">
+              {tech.description}
+            </span>
+          </li>
         ))}
-      </div>
-    </div>
+      </ul>
+    </section>
   );
 }

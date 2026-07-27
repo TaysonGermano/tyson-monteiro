@@ -1,19 +1,17 @@
-"use client";
-import React from "react";
-import { useSelector } from "react-redux";
 import Hero from "./_ui/Hero";
 import Projects from "./_ui/Projects";
-import Stack from "./_ui/Stack";
-import Skills from "./_ui/Skills";
 import Services from "./_ui/Services";
-import HireMe from "./_ui/HireMe";
+import Stack from "./_ui/Stack";
+import AiWorkflow from "./_ui/AiWorkflow";
 
 export default function Home() {
   return (
-    <div className="pt-5 flex flex-col gap-14">
+    <div className="flex flex-col gap-20 pb-10">
       <Hero />
       <Projects />
+      <Services />
       <Stack />
+      <AiWorkflow />
     </div>
   );
 }
