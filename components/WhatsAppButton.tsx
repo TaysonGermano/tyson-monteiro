@@ -8,8 +8,8 @@ const prefill = encodeURIComponent(
 );
 const waHref = `https://wa.me/${waNumber}?text=${prefill}`;
 
-// Floating WhatsApp button. Fixed to the bottom-left so it never
-// collides with the scroll-to-top button (bottom-right). Kept
+// Floating WhatsApp button. Fixed to the bottom-right so it never
+// collides with the scroll-to-top button (bottom-left). Kept
 // monochrome to match the black-and-white design.
 export default function WhatsAppButton() {
   return (
@@ -19,7 +19,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Chat with Tyson on WhatsApp"
       title="Chat on WhatsApp"
-      className="no-underline fixed bottom-6 left-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition-transform hover:scale-105 dark:bg-white dark:text-black"
+      className="no-underline fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition-transform hover:scale-105 dark:bg-white dark:text-black"
     >
       <svg
         viewBox="0 0 24 24"
