@@ -19,8 +19,14 @@ export async function generateMetadata({
   const project = PROJECTS.find((p) => p.slug === slug);
   if (!project) return { title: "Project not found" };
   return {
-    title: `${project.name} — Tyson Monteiro`,
-    description: project.blurb,
+    title: project.name,
+    description: `${project.blurb}. ${project.role} — a project by Tyson Monteiro, fullstack developer in Cape Town.`,
+    alternates: { canonical: `/work/${project.slug}` },
+    openGraph: {
+      title: `${project.name} — Tyson Monteiro`,
+      description: project.blurb,
+      images: [{ url: project.image, alt: project.name }],
+    },
   };
 }
 

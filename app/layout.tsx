@@ -4,15 +4,53 @@ import { Inter } from "next/font/google";
 import ThemeProvider from "./theme/ThemeProvider";
 import Navbar from "../components/Navbar";
 import ScroolToTop from "../components/ScroolToTop";
+import WhatsAppButton from "../components/WhatsAppButton";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 import { Analytics } from "@vercel/analytics/next";
+import { SITE } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tyson Monteiro - Fullstack Developer",
-  description:
-    "Fullstack developer based in Cape Town, South Africa. Building web apps, mobile apps, APIs and websites — and available to work with you.",
+  metadataBase: new URL(SITE.url),
+  title: {
+    default: `${SITE.name} — ${SITE.jobTitle} in Cape Town`,
+    template: `%s — ${SITE.name}`,
+  },
+  description: SITE.description,
+  keywords: [...SITE.keywords],
+  authors: [{ name: SITE.name, url: SITE.url }],
+  creator: SITE.name,
+  applicationName: `${SITE.name} Portfolio`,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_ZA",
+    url: SITE.url,
+    siteName: `${SITE.name} — ${SITE.jobTitle}`,
+    title: `${SITE.name} — ${SITE.jobTitle} in Cape Town`,
+    description: SITE.description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE.name} — ${SITE.jobTitle} in Cape Town`,
+    description: SITE.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "technology",
 };
 
 // Runs before paint to set the correct theme class and avoid a flash.
@@ -38,6 +76,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <JsonLd />
       </head>
       <body className={`${inter.className} bg-white text-black dark:bg-black dark:text-white`}>
         <ThemeProvider>
@@ -47,6 +86,7 @@ export default function RootLayout({
           </header>
           <main className="mx-auto max-w-5xl px-4">{children}</main>
           <Footer />
+          <WhatsAppButton />
           <ScroolToTop />
         </ThemeProvider>
       </body>

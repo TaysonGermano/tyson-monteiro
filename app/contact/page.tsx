@@ -1,34 +1,32 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Mail, Phone, Linkedin } from "lucide-react";
+import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact — Tyson Monteiro",
-  description: "Get in touch with Tyson Monteiro.",
+  title: "Contact",
+  description: `Get in touch with ${SITE.name}, a ${SITE.jobTitle.toLowerCase()} in ${SITE.location.city}, ${SITE.location.country}. Email, phone or LinkedIn.`,
+  alternates: { canonical: "/contact" },
 };
-
-// TODO: replace the placeholder below with the real phone number.
-const PHONE_DISPLAY = "+27 834 823 694";
-const PHONE_TEL = "+27834823694";
 
 const CONTACTS = [
   {
     Icon: Mail,
     label: "Email",
-    value: "taysongermano@gmail.com",
-    href: "mailto:taysongermano@gmail.com",
+    value: SITE.email,
+    href: `mailto:${SITE.email}`,
   },
   {
     Icon: Phone,
     label: "Phone",
-    value: PHONE_DISPLAY,
-    href: `tel:${PHONE_TEL}`,
+    value: SITE.phoneDisplay,
+    href: `tel:${SITE.phone}`,
   },
   {
     Icon: Linkedin,
     label: "LinkedIn",
     value: "tyson-monteiro",
-    href: "https://www.linkedin.com/in/tyson-monteiro-59227a158/",
+    href: SITE.linkedin,
   },
 ];
 

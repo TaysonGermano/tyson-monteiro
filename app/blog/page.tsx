@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — Tyson Monteiro",
-  description: "Coming soon.",
+  title: "Blog",
+  description:
+    "Articles on web development, React, Next.js and building software — coming soon.",
+  alternates: { canonical: "/blog" },
 };
 
 export default function BlogPage() {
