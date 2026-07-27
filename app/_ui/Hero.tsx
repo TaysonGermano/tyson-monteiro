@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-8 py-10">
       <div className="max-w-xl text-center sm:text-left">
         <p className="text-sm mb-3 text-black/60 dark:text-white/60">
-          Tyson Monteiro — Fullstack Developer
+          Tyson Monteiro, Fullstack Developer
         </p>
         <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
           Hey there! I&apos;m Tyson Monteiro, a fullstack developer who builds

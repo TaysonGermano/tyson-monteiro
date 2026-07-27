@@ -5,6 +5,7 @@ import ThemeProvider from "./theme/ThemeProvider";
 import Navbar from "../components/Navbar";
 import ScroolToTop from "../components/ScroolToTop";
 import WhatsAppButton from "../components/WhatsAppButton";
+import LeadPopup from "../components/LeadPopup";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { Analytics } from "@vercel/analytics/next";
@@ -15,8 +16,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${SITE.jobTitle} in Cape Town`,
-    template: `%s — ${SITE.name}`,
+    default: `${SITE.name}, ${SITE.jobTitle} in Cape Town`,
+    template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
   keywords: [...SITE.keywords],
@@ -30,13 +31,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_ZA",
     url: SITE.url,
-    siteName: `${SITE.name} — ${SITE.jobTitle}`,
-    title: `${SITE.name} — ${SITE.jobTitle} in Cape Town`,
+    siteName: `${SITE.name}, ${SITE.jobTitle}`,
+    title: `${SITE.name}, ${SITE.jobTitle} in Cape Town`,
     description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — ${SITE.jobTitle} in Cape Town`,
+    title: `${SITE.name}, ${SITE.jobTitle} in Cape Town`,
     description: SITE.description,
   },
   robots: {
@@ -78,7 +79,9 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <JsonLd />
       </head>
-      <body className={`${inter.className} bg-white text-black dark:bg-black dark:text-white`}>
+      <body
+        className={`${inter.className} bg-white text-black dark:bg-black dark:text-white`}
+      >
         <ThemeProvider>
           <Analytics />
           <header>
@@ -88,6 +91,7 @@ export default function RootLayout({
           <Footer />
           <WhatsAppButton />
           <ScroolToTop />
+          <LeadPopup />
         </ThemeProvider>
       </body>
     </html>

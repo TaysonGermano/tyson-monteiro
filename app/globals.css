@@ -28,3 +28,39 @@ a {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
+
+/* ---- Lead popup animations ---- */
+@keyframes lead-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes lead-pop-in {
+    from { opacity: 0; transform: translateY(24px) scale(0.96); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes lead-rise {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lead-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.lead-backdrop { animation: lead-fade-in 0.3s ease-out both; }
+.lead-card { animation: lead-pop-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.lead-stagger { animation: lead-rise 0.5s ease-out both; }
+
+/* Animated conic sheen that sweeps around the card border. */
+@keyframes lead-spin {
+    to { transform: rotate(1turn); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lead-backdrop,
+    .lead-card,
+    .lead-stagger { animation: none; }
+}

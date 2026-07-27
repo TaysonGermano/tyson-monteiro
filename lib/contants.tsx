@@ -204,7 +204,7 @@ export const PROJECTS = [
     id: 2,
     name: "PlaylistGenius",
     slug: "playlistgenius",
-    blurb: "AI-powered playlist generator for DJs & music lovers",
+    blurb: "AI playlist generator for DJs & music lovers",
     description:
       "PlaylistGenius stands as the pioneering playlist generator, utilizing AI to craft personalized playlists tailored to the user's criteria. Perfect for DJs and music enthusiasts, it includes features like exporting to YouTube and Spotify, merging two or more playlists, and creating playlists based on mood, BPM, genre, and more.",
     role: "Full-stack Developer",
@@ -440,13 +440,13 @@ export const SERVICES = [
   {
     title: "Website development",
     description:
-      "Responsive, high-performing websites and landing pages that convert.",
+      "Responsive, fast websites and landing pages that convert.",
     icon: <Globe size={28} />,
   },
   {
     title: "SEO",
     description:
-      "Technical SEO and on-page optimization to help your site rank and get found.",
+      "Technical SEO and on page optimization to help your site rank and get found.",
     icon: <Search size={28} />,
   },
   {
@@ -474,7 +474,7 @@ export const STACK = [
   },
   {
     name: "Next.js",
-    description: "Full-stack React framework for fast, SEO-friendly apps.",
+    description: "Full-stack React framework for fast apps that rank well.",
   },
   {
     name: "React Native",
@@ -490,11 +490,11 @@ export const STACK = [
   },
   {
     name: "MongoDB",
-    description: "Flexible document database for fast-moving products.",
+    description: "Flexible document database for products that move fast.",
   },
   {
     name: "Tailwind CSS",
-    description: "Utility-first styling for consistent, responsive design.",
+    description: "Utility first styling for consistent, responsive design.",
   },
   {
     name: "WordPress",

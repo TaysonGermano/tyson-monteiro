@@ -41,7 +41,7 @@ export default function JsonLd() {
       {
         "@type": "ProfessionalService",
         "@id": `${SITE.url}/#business`,
-        name: `${SITE.name} — ${SITE.jobTitle}`,
+        name: `${SITE.name}, ${SITE.jobTitle}`,
         url: SITE.url,
         description: SITE.description,
         email: `mailto:${SITE.email}`,
@@ -77,7 +77,7 @@ export default function JsonLd() {
         "@type": "WebSite",
         "@id": `${SITE.url}/#website`,
         url: SITE.url,
-        name: `${SITE.name} — ${SITE.jobTitle}`,
+        name: `${SITE.name}, ${SITE.jobTitle}`,
         description: SITE.description,
         inLanguage: "en",
         publisher: { "@id": `${SITE.url}/#person` },

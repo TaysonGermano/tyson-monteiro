@@ -2,7 +2,7 @@ const STEPS = [
   {
     title: "Plan before I build",
     description:
-      "I use AI to pressure-test the approach up front — mapping out requirements, edge cases and architecture into a clear spec before a single line of code is written.",
+      "I use AI to pressure test the approach up front. Requirements, edge cases and architecture all get mapped into a clear spec before a single line of code is written.",
   },
   {
     title: "Accelerate the build",
@@ -12,7 +12,7 @@ const STEPS = [
   {
     title: "Review everything, twice",
     description:
-      "Every change goes through AI-assisted code review alongside my own — catching bugs, security issues and rough edges long before they reach production.",
+      "Every change goes through AI assisted code review alongside my own. Bugs, security issues and rough edges get caught long before they reach production.",
   },
   {
     title: "Verify against the real thing",
@@ -25,10 +25,10 @@ export default function AiWorkflow() {
   return (
     <section className="scroll-mt-24" id="ai">
       <h2 className="text-2xl font-bold">
-        How I use AI to deliver the highest-quality software
+        How I use AI to deliver the highest quality software
       </h2>
       <p className="text-sm text-black/60 dark:text-white/60 mt-2 max-w-2xl">
-        AI is a force multiplier in my workflow — not a shortcut that cuts
+        AI is a force multiplier in my workflow, not a shortcut that cuts
         corners. It lets me move faster while raising the bar on quality. Here is
         how it fits into every project.
       </p>

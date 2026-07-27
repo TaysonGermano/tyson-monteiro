@@ -45,7 +45,7 @@ export default function WorkWithMePage() {
   if (status === "success") {
     return (
       <section className="flex min-h-[60vh] flex-col items-center justify-center text-center">
-        <h1 className="text-3xl font-extrabold">Thanks — message sent!</h1>
+        <h1 className="text-3xl font-extrabold">Thanks! Message sent.</h1>
         <p className="mt-3 max-w-md text-black/60 dark:text-white/60">
           I&apos;ve received your request and will get back to you as soon as I
           can.

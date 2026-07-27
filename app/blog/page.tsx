@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Articles on web development, React, Next.js and building software — coming soon.",
+    "Articles on web development, React, Next.js and building software. Coming soon.",
   alternates: { canonical: "/blog" },
 };
 
