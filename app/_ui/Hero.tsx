@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const CV_URL = "https://rxresu.me/taysongermano/fullstack-developer";
+const CV_URL =
+  "https://cvbuilder.tysonmonteiro.dev/r/HNnlIfYNTsifgwax1o0yFpmydrw";
 
 export default function Hero() {
   return (
