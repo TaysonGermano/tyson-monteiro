@@ -8,6 +8,7 @@ import {
   Wrench,
   LifeBuoy,
 } from "lucide-react";
+import type { Project } from "@/lib/types";
 
 export const FILTERS = [
   {
@@ -115,9 +116,99 @@ export const FILTERS = [
     active: false,
     id: 23,
   },
+  {
+    name: "Vitest",
+    active: false,
+    id: 24,
+  },
+  {
+    name: "Playwright",
+    active: false,
+    id: 25,
+  },
+  {
+    name: "Turso",
+    active: false,
+    id: 26,
+  },
+  {
+    name: "Upstash Redis",
+    active: false,
+    id: 27,
+  },
+  {
+    name: "Resend",
+    active: false,
+    id: 28,
+  },
+  {
+    name: "Tailwind CSS v4",
+    active: false,
+    id: 29,
+  },
+  {
+    name: "Kysely",
+    active: false,
+    id: 30,
+  },
+  {
+    name: "Tiptap",
+    active: false,
+    id: 31,
+  },
 ];
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
+  {
+    id: 9,
+    name: "BClear",
+    slug: "bclear",
+    blurb: "Free website scorer that turns audits into leads",
+    description:
+      "BClear grades any website out of 100 in about 30 seconds, blending Google Lighthouse performance and SEO, a custom conversion-readiness analysis, and a visual presentation score. It turns a developer-only technical audit into plain-English advice a business owner can act on: visitors see their score and problems on screen, then hand over an email to unlock the step-by-step fix report, self-qualifying as warm leads for a done-for-you web service. Built with Next.js 16 and TypeScript, every external service sits behind a typed, swappable interface with in-memory fallbacks, so the whole flow runs keyless in dev and CI, and it is covered by 160+ automated tests.",
+    role: "Full-stack Developer",
+    stack: [
+      { id: 3, name: "Nextjs" },
+      { id: 2, name: "Typescript" },
+      { id: 29, name: "Tailwind CSS v4" },
+      { id: 26, name: "Turso" },
+      { id: 27, name: "Upstash Redis" },
+      { id: 28, name: "Resend" },
+      { id: 24, name: "Vitest" },
+      { id: 25, name: "Playwright" },
+      { id: 1, name: "Reactjs" },
+    ],
+    tag: "",
+    access: "Public",
+    owner: "self",
+    link: "https://bclear.tysonmonteiro.dev/",
+    image: "/bclear.png",
+  },
+  {
+    id: 10,
+    name: "Tyson CV Builder",
+    slug: "tyson-cv-builder",
+    blurb: "CV builder with true-to-export live PDF preview",
+    description:
+      "Tyson CV Builder is a guided, section-based CV editor with a live preview that renders the actual PDF export (via @react-pdf/renderer, painted to canvas with pdf.js) rather than an HTML approximation. It ships 13 templates, 9 of them flagged ATS-safe, a transparent 0–100 CV score built from 16 weighted, convention-backed rules, and in-browser import from PDF, TXT or Markdown so files never touch the server. Accounts use Better Auth (Google OAuth and email/password), with opt-in private shareable links, a curated job-portals directory, and full English/Portuguese internationalization at 457 keys each. Built with Next.js 16 and React 19, including a custom Kysely dialect for libSQL and a security model where ownership always comes from the session, never the request.",
+    role: "Full-stack Developer",
+    stack: [
+      { id: 3, name: "Nextjs" },
+      { id: 2, name: "Typescript" },
+      { id: 29, name: "Tailwind CSS v4" },
+      { id: 23, name: "Better Auth" },
+      { id: 26, name: "Turso" },
+      { id: 30, name: "Kysely" },
+      { id: 31, name: "Tiptap" },
+      { id: 28, name: "Resend" },
+      { id: 1, name: "Reactjs" },
+    ],
+    tag: "",
+    access: "Public",
+    owner: "self",
+    link: "https://cvbuilder.tysonmonteiro.dev/",
+    image: "/cvbuilder.png",
+  },
   {
     id: 1,
     name: "Yenza Prep",
@@ -248,6 +339,7 @@ export const PROJECTS = [
     ],
     tag: "",
     access: "Public",
+    owner: "self",
     link: "https://www.playlistgenius.app/",
     image: "/screenshot-playlistgenius-v2.png",
   },
