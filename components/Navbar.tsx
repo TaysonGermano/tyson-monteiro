@@ -8,6 +8,10 @@ import ThemeToggle from "./ThemeToggle";
 const MENU = [
   { label: "Work", href: "/#work" },
   { label: "Services", href: "/#services" },
+  // Your suggested name: "My side businesses".
+  // Renamed to "Products I built" — reads more confident and signals
+  // that these are real, shippable tools people can use.
+  { label: "Products I built", href: "/products" },
   { label: "Stack", href: "/#stack" },
   { label: "AI", href: "/#ai" },
   { label: "Blog", href: "/blog" },
