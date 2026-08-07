@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ThemeProvider from "./theme/ThemeProvider";
+import ColorProvider from "./theme/ColorProvider";
 import Navbar from "../components/Navbar";
 import ScroolToTop from "../components/ScroolToTop";
 import WhatsAppButton from "../components/WhatsAppButton";
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
   category: "technology",
 };
 
-// Runs before paint to set the correct theme class and avoid a flash.
+// Runs before paint to set the correct theme + colour classes and avoid a flash.
 const themeScript = `
 (function () {
   try {
@@ -64,6 +65,10 @@ const themeScript = `
       (stored !== "light" &&
         window.matchMedia("(prefers-color-scheme: dark)").matches);
     document.documentElement.classList.toggle("dark", isDark);
+    document.documentElement.classList.toggle(
+      "color",
+      localStorage.getItem("color") === "color"
+    );
   } catch (e) {}
 })();
 `;
@@ -83,15 +88,17 @@ export default function RootLayout({
         className={`${inter.className} bg-white text-black dark:bg-black dark:text-white`}
       >
         <ThemeProvider>
-          <Analytics />
-          <header>
-            <Navbar />
-          </header>
-          <main className="mx-auto max-w-5xl px-4">{children}</main>
-          <Footer />
-          <WhatsAppButton />
-          <ScroolToTop />
-          <LeadPopup />
+          <ColorProvider>
+            <Analytics />
+            <header>
+              <Navbar />
+            </header>
+            <main className="mx-auto max-w-5xl px-4">{children}</main>
+            <Footer />
+            <WhatsAppButton />
+            <ScroolToTop />
+            <LeadPopup />
+          </ColorProvider>
         </ThemeProvider>
       </body>
     </html>

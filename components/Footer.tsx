@@ -9,14 +9,14 @@ export default function Footer() {
           href="https://www.linkedin.com/in/tyson-monteiro-59227a158/"
           target="_blank"
           aria-label="LinkedIn"
-          className="no-underline text-black dark:text-white"
+          className="accent-text no-underline transition-colors"
         >
           <Linkedin size={20} />
         </Link>
         <Link
           href="mailto:taysongermano@gmail.com"
           aria-label="Email"
-          className="no-underline text-black dark:text-white"
+          className="accent-text no-underline transition-colors"
         >
           <Mail size={20} />
         </Link>

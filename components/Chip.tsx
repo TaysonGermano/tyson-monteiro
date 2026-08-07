@@ -9,10 +9,10 @@ type Props = {
 export default function Chip(props: Props) {
   return (
     <button
-      className={`py-1 px-4 text-sm rounded-full border border-black dark:border-white select-none transition-colors ${
+      className={`accent-border py-1 px-4 text-sm rounded-full border select-none transition-colors ${
         props.active
-          ? "bg-black text-white dark:bg-white dark:text-black"
-          : "bg-transparent text-black dark:text-white"
+          ? "accent-bg"
+          : "accent-text bg-transparent"
       }`}
       onClick={props.onClick}
     >

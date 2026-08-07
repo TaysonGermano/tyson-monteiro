@@ -10,17 +10,51 @@ html {
 :root {
     --paper: #ffffff;
     --ink: #000000;
+
+    /* Accent defaults to plain ink, so the site stays monochrome unless the
+       colour toggle is on. Anything accent-aware reads these three. */
+    --accent: var(--ink);
+    --accent-contrast: var(--paper);
+    --accent-soft: rgb(0 0 0 / 0.06);
 }
 
 .dark {
     --paper: #000000;
     --ink: #ffffff;
+    --accent-soft: rgb(255 255 255 / 0.1);
+}
+
+/* Colour mode on. Indigo reads well on white; lighter on black to keep
+   contrast comfortable against the dark background. */
+.color {
+    --accent: #4f46e5;
+    --accent-contrast: #ffffff;
+    --accent-soft: rgb(79 70 229 / 0.1);
+}
+
+.color.dark {
+    --accent: #a5b4fc;
+    --accent-contrast: #000000;
+    --accent-soft: rgb(165 180 252 / 0.16);
 }
 
 body {
     background-color: var(--paper);
     color: var(--ink);
 }
+
+/* ---- Accent-aware helpers ----
+   These stay invisible in mono mode because --accent is just the ink colour,
+   and light up automatically when the colour toggle is switched on. */
+.accent-text { color: var(--accent); }
+.accent-bg { background-color: var(--accent); color: var(--accent-contrast); }
+.accent-border { border-color: var(--accent); }
+.accent-soft-bg { background-color: var(--accent-soft); }
+
+/* The hero portrait is greyscale by default and regains its colour with the
+   toggle. */
+.accent-photo { filter: grayscale(1); transition: filter 0.4s ease; }
+.color .accent-photo { filter: grayscale(0); }
 
 /* Links: same font & colour as body text, underline only. */
 a {
