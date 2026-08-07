@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Reactjs from "./logos/Reactjs";
 import ThemeToggle from "./ThemeToggle";
+import ColorToggle from "./ColorToggle";
 
 const MENU = [
   { label: "Work", href: "/#work" },
@@ -34,7 +35,7 @@ export default function Navbar() {
         </Link>
 
         {/* Center menu (desktop) */}
-        <ul className="hidden md:flex items-center gap-7 absolute left-1/2 -translate-x-1/2">
+        <ul className="hidden lg:flex flex-1 justify-center items-center gap-5">
           {MENU.map((item) => (
             <li key={item.href}>
               <Link
@@ -48,18 +49,19 @@ export default function Navbar() {
         </ul>
 
         {/* Right controls (desktop) */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex shrink-0 items-center gap-3">
+          <ColorToggle />
           <ThemeToggle />
           <Link
             href="/work-with-me"
-            className="no-underline rounded-md bg-black px-4 py-2 text-sm text-white dark:bg-white dark:text-black"
+            className="accent-bg no-underline rounded-md px-4 py-2 text-sm transition-colors"
           >
             Work with me
           </Link>
         </div>
 
         {/* Mobile controls */}
-        <div className="flex md:hidden items-center gap-3">
+        <div className="flex lg:hidden items-center gap-3">
           <ThemeToggle />
           <button
             type="button"
@@ -75,7 +77,7 @@ export default function Navbar() {
 
       {/* Mobile menu panel */}
       {open && (
-        <div className="md:hidden pb-5">
+        <div className="lg:hidden pb-5">
           <ul className="flex flex-col gap-4">
             {MENU.map((item) => (
               <li key={item.href}>
@@ -96,6 +98,12 @@ export default function Navbar() {
               >
                 Work with me
               </Link>
+            </li>
+            <li className="flex items-center justify-between pt-2">
+              <span className="text-sm text-black/60 dark:text-white/60">
+                Colour
+              </span>
+              <ColorToggle />
             </li>
           </ul>
         </div>

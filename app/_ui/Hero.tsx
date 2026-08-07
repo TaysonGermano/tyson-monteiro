@@ -19,11 +19,11 @@ export default function Hero() {
         <div className="mt-6 flex flex-wrap items-center justify-center sm:justify-start gap-5">
           <Link
             href="/work-with-me"
-            className="no-underline rounded-md bg-black px-5 py-2.5 text-sm text-white dark:bg-white dark:text-black"
+            className="accent-bg no-underline rounded-md px-5 py-2.5 text-sm transition-colors"
           >
             Work with me
           </Link>
-          <Link href={CV_URL} target="_blank" className="text-sm">
+          <Link href={CV_URL} target="_blank" className="accent-text text-sm">
             Download CV
           </Link>
         </div>
@@ -36,7 +36,7 @@ export default function Hero() {
             alt="Tyson Monteiro"
             fill
             priority
-            className="object-cover grayscale"
+            className="accent-photo object-cover"
           />
         </div>
       </div>
