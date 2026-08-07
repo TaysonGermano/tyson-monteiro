@@ -34,7 +34,7 @@ const TOOLS = [
     headline: "Generate the perfect playlist",
     name: "PlaylistGenius",
     pitch:
-      "AI playlists built around mood, BPM or genre, exportable straight to Spotify and YouTube.",
+      "Playlists built around mood, BPM or genre, exportable straight to Spotify and YouTube.",
     href: "https://www.playlistgenius.app/",
     image: "/screenshot-playlistgenius-v2.png",
     slug: "playlistgenius",
