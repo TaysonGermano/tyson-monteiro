@@ -92,11 +92,6 @@ export const FILTERS = [
     id: 18,
   },
   {
-    name: "AI",
-    active: false,
-    id: 19,
-  },
-  {
     name: "Postgres",
     active: false,
     id: 20,
@@ -295,9 +290,9 @@ export const PROJECTS: Project[] = [
     id: 2,
     name: "PlaylistGenius",
     slug: "playlistgenius",
-    blurb: "AI playlist generator for DJs & music lovers",
+    blurb: "Playlist generator for DJs & music lovers",
     description:
-      "PlaylistGenius stands as the pioneering playlist generator, utilizing AI to craft personalized playlists tailored to the user's criteria. Perfect for DJs and music enthusiasts, it includes features like exporting to YouTube and Spotify, merging two or more playlists, and creating playlists based on mood, BPM, genre, and more.",
+      "PlaylistGenius crafts personalized playlists tailored to the user's criteria. Perfect for DJs and music enthusiasts, it includes features like exporting to YouTube and Spotify, merging two or more playlists, and creating playlists based on mood, BPM, genre, and more.",
     role: "Full-stack Developer",
     stack: [
       {
@@ -311,10 +306,6 @@ export const PROJECTS: Project[] = [
       {
         id: 20,
         name: "Postgres",
-      },
-      {
-        id: 19,
-        name: "AI",
       },
       {
         id: 21,
