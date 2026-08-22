@@ -158,9 +158,9 @@ export const PROJECTS: Project[] = [
     id: 9,
     name: "BClear",
     slug: "bclear",
-    blurb: "Free website scorer that turns audits into leads",
+    blurb: "SEO tool that tells you exactly which pages to improve",
     description:
-      "BClear grades any website out of 100 in about 30 seconds, blending Google Lighthouse performance and SEO, a custom conversion-readiness analysis, and a visual presentation score. It turns a developer-only technical audit into plain-English advice a business owner can act on: visitors see their score and problems on screen, then hand over an email to unlock the step-by-step fix report, self-qualifying as warm leads for a done-for-you web service. Built with Next.js 16 and TypeScript, every external service sits behind a typed, swappable interface with in-memory fallbacks, so the whole flow runs keyless in dev and CI, and it is covered by 160+ automated tests.",
+      "BClear reads your own Google Search Console data and tells you exactly which pages to improve, which keywords to chase, and what to write next. Real data, clear actions, no guesswork.",
     role: "Full-stack Developer",
     stack: [
       { id: 3, name: "Nextjs" },
@@ -177,7 +177,7 @@ export const PROJECTS: Project[] = [
     access: "Public",
     owner: "self",
     link: "https://bclear.tysonmonteiro.dev/",
-    image: "/bclear.png",
+    image: "/bclear.webp",
   },
   {
     id: 10,
@@ -522,8 +522,7 @@ export const SERVICES = [
   },
   {
     title: "Website development",
-    description:
-      "Responsive, fast websites and landing pages that convert.",
+    description: "Responsive, fast websites and landing pages that convert.",
     icon: <Globe size={28} />,
   },
   {

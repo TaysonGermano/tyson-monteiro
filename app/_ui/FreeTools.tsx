@@ -25,9 +25,9 @@ const TOOLS = [
     headline: "Score your website in 30 seconds",
     name: "BClear",
     pitch:
-      "Grades any site out of 100 on speed, SEO and conversion readiness, then tells you what to fix in plain English.",
+      "BClear reads your Google Search Console data and tells you exactly which pages to improve, which keywords to chase, and what to write next.",
     href: "https://bclear.tysonmonteiro.dev/",
-    image: "/bclear.png",
+    image: "/bclear.webp",
     slug: "bclear",
   },
   {
@@ -48,8 +48,8 @@ export default function FreeTools() {
         <div>
           <h2 className="text-2xl font-bold">Free tools I built</h2>
           <p className="mt-2 text-sm text-black/60 dark:text-white/60">
-            Real products I designed, shipped and still run. Try any of them,
-            no strings attached.
+            Real products I designed, shipped and still run. Try any of them, no
+            strings attached.
           </p>
         </div>
         <Link
