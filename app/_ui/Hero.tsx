@@ -36,7 +36,7 @@ export default function Hero() {
             alt="Tyson Monteiro"
             fill
             priority
-            className="accent-photo object-cover"
+            className="object-cover"
           />
         </div>
       </div>
