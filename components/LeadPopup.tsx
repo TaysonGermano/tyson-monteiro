@@ -121,7 +121,7 @@ export default function LeadPopup() {
               src="/tysonmonteiro.jpg"
               alt="Tyson Monteiro"
               fill
-              className="object-cover object-top grayscale"
+              className="object-cover object-top"
               sizes="430px"
             />
             {/* Gradient so the overlaid text stays legible */}
@@ -147,7 +147,7 @@ export default function LeadPopup() {
                     src="/tysonmonteiro.jpg"
                     alt="Tyson Monteiro"
                     fill
-                    className="object-cover object-top grayscale"
+                    className="object-cover object-top"
                     sizes="48px"
                   />
                 </div>

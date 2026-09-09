@@ -51,10 +51,57 @@ body {
 .accent-border { border-color: var(--accent); }
 .accent-soft-bg { background-color: var(--accent-soft); }
 
-/* The hero portrait is greyscale by default and regains its colour with the
-   toggle. */
-.accent-photo { filter: grayscale(1); transition: filter 0.4s ease; }
-.color .accent-photo { filter: grayscale(0); }
+/* ---- Image desaturation ----
+   The site is monochrome by default, so imagery is too. This is deliberately a
+   blanket rule rather than a per-component class: any image added later is
+   desaturated automatically in mono mode and regains its colour with the
+   toggle, with no extra markup to remember.
+
+   Covers <img> (next/image renders one), plus inline SVG and CSS background
+   images. Escape hatches, in order of bluntness:
+     .keep-color     - one element that must stay in colour in both modes
+     .keep-mono      - one element that must stay grey even in colour mode
+     [data-keep-color] on any ancestor - exempts a whole subtree
+
+   Restoring colour uses `filter: none`, not `saturate(1)`: the CSS minifier
+   strips the redundant-looking `1` and emits invalid `saturate()`, which the
+   browser drops, leaving images grey in colour mode. `none` survives it. */
+img,
+svg image,
+video,
+.bg-image {
+    filter: saturate(0);
+    transition: filter 0.4s ease;
+}
+
+.color img,
+.color svg image,
+.color video,
+.color .bg-image {
+    filter: none;
+}
+
+/* Opt-outs. Kept after the rules above so they win on equal specificity. */
+.keep-color,
+[data-keep-color] img,
+[data-keep-color] video {
+    filter: none !important;
+}
+
+.keep-mono {
+    filter: saturate(0) !important;
+}
+
+/* Respect users who ask for less motion: recolouring still happens, just
+   without the crossfade. */
+@media (prefers-reduced-motion: reduce) {
+    img,
+    svg image,
+    video,
+    .bg-image {
+        transition: none;
+    }
+}
 
 /* Links: same font & colour as body text, underline only. */
 a {
