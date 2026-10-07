@@ -155,56 +155,6 @@ export const FILTERS = [
 
 export const PROJECTS: Project[] = [
   {
-    id: 9,
-    name: "BClear",
-    slug: "bclear",
-    blurb: "SEO tool that tells you exactly which pages to improve",
-    description:
-      "BClear reads your own Google Search Console data and tells you exactly which pages to improve, which keywords to chase, and what to write next. Real data, clear actions, no guesswork.",
-    role: "Full-stack Developer",
-    stack: [
-      { id: 3, name: "Nextjs" },
-      { id: 2, name: "Typescript" },
-      { id: 29, name: "Tailwind CSS v4" },
-      { id: 26, name: "Turso" },
-      { id: 27, name: "Upstash Redis" },
-      { id: 28, name: "Resend" },
-      { id: 24, name: "Vitest" },
-      { id: 25, name: "Playwright" },
-      { id: 1, name: "Reactjs" },
-    ],
-    tag: "",
-    access: "Public",
-    owner: "self",
-    link: "https://bclear.tysonmonteiro.dev/",
-    image: "/bclear.webp",
-  },
-  {
-    id: 10,
-    name: "Tyson CV Builder",
-    slug: "tyson-cv-builder",
-    blurb: "CV builder with true-to-export live PDF preview",
-    description:
-      "Tyson CV Builder is a guided, section-based CV editor with a live preview that renders the actual PDF export (via @react-pdf/renderer, painted to canvas with pdf.js) rather than an HTML approximation. It ships 13 templates, 9 of them flagged ATS-safe, a transparent 0–100 CV score built from 16 weighted, convention-backed rules, and in-browser import from PDF, TXT or Markdown so files never touch the server. Accounts use Better Auth (Google OAuth and email/password), with opt-in private shareable links, a curated job-portals directory, and full English/Portuguese internationalization at 457 keys each. Built with Next.js 16 and React 19, including a custom Kysely dialect for libSQL and a security model where ownership always comes from the session, never the request.",
-    role: "Full-stack Developer",
-    stack: [
-      { id: 3, name: "Nextjs" },
-      { id: 2, name: "Typescript" },
-      { id: 29, name: "Tailwind CSS v4" },
-      { id: 23, name: "Better Auth" },
-      { id: 26, name: "Turso" },
-      { id: 30, name: "Kysely" },
-      { id: 31, name: "Tiptap" },
-      { id: 28, name: "Resend" },
-      { id: 1, name: "Reactjs" },
-    ],
-    tag: "",
-    access: "Public",
-    owner: "self",
-    link: "https://cvbuilder.tysonmonteiro.dev/",
-    image: "/cvbuilder.png",
-  },
-  {
     id: 1,
     name: "Yenza Prep",
     slug: "yenza-prep",
@@ -453,45 +403,6 @@ export const PROJECTS: Project[] = [
     access: "Private",
     link: "",
     image: "/hostagentsredbacked.png",
-  },
-  {
-    id: 8,
-    name: "GuideMe Tours",
-    slug: "guideme-tours",
-    blurb: "Luxury private tours platform (in progress)",
-    description:
-      "GuideMe Tours is a distinguished platform specializing in luxurious and private tours throughout Cape Town. Currently, I am fully engaged as a Fullstack developer, tasked with taking this project from inception to completion. Leveraging my expertise in UI/UX design and software engineering.",
-    role: "Full-stack Developer",
-    stack: [
-      {
-        id: 3,
-        name: "Nextjs",
-      },
-      {
-        id: 1,
-        name: "Reactjs",
-      },
-      {
-        id: 5,
-        name: "Nodejs",
-      },
-      {
-        id: 2,
-        name: "Typescript",
-      },
-      {
-        id: 6,
-        name: "Mongodb",
-      },
-      {
-        id: 15,
-        name: "Redux",
-      },
-    ],
-    tag: "Coming soon",
-    access: "Public",
-    link: "",
-    image: "/guidemetours.png",
   },
 ];
 
