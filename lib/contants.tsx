@@ -155,6 +155,54 @@ export const FILTERS = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 11,
+    name: "Picks Football",
+    slug: "picks-football",
+    blurb: "Football prediction platform for Europe’s biggest leagues",
+    description:
+      "Picks works out the chance of every result in Europe’s biggest leagues, shows you the reasoning behind each number, and keeps a public record of how those predictions actually turned out.",
+    role: "Full-stack Developer",
+    stack: [
+      {
+        id: 3,
+        name: "Nextjs",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+      },
+      {
+        id: 20,
+        name: "Postgres",
+      },
+      {
+        id: 21,
+        name: "Neon",
+      },
+      {
+        id: 22,
+        name: "Drizzle ORM",
+      },
+      {
+        id: 23,
+        name: "Better Auth",
+      },
+      {
+        id: 4,
+        name: "Tailwind CSS",
+      },
+      {
+        id: 1,
+        name: "Reactjs",
+      },
+    ],
+    tag: "",
+    access: "Public",
+    owner: "self",
+    link: "https://picks.tysonmonteiro.dev/",
+    image: "/dashboard-en-light.webp",
+  },
+  {
     id: 2,
     name: "PlaylistGenius",
     slug: "playlistgenius",

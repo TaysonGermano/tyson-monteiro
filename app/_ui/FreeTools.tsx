@@ -22,13 +22,13 @@ const TOOLS = [
     slug: "tyson-cv-builder",
   },
   {
-    headline: "Score your website in 30 seconds",
-    name: "BClear",
+    headline: "Get your predictions right",
+    name: "Picks Football",
     pitch:
-      "BClear reads your Google Search Console data and tells you exactly which pages to improve, which keywords to chase, and what to write next.",
-    href: "https://bclear.tysonmonteiro.dev/",
-    image: "/bclear.webp",
-    slug: "bclear",
+      "Picks works out the chance of every result in Europe’s biggest leagues, shows you the reasoning behind each number, and keeps a public record of how those predictions actually turned out.",
+    href: "https://picks.tysonmonteiro.dev/",
+    image: "/dashboard-en-light.webp",
+    slug: "picks-football",
   },
   {
     headline: "Generate the perfect playlist",
