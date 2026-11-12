@@ -479,11 +479,11 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 10,
-    name: "Tyson CV Builder",
-    slug: "tyson-cv-builder",
+    name: "ShortlistCV",
+    slug: "shortlist-cv",
     blurb: "CV builder with true-to-export live PDF preview",
     description:
-      "Tyson CV Builder is a guided, section-based CV editor with a live preview that renders the actual PDF export (via @react-pdf/renderer, painted to canvas with pdf.js) rather than an HTML approximation. It ships 13 templates, 9 of them flagged ATS-safe, a transparent 0–100 CV score built from 16 weighted, convention-backed rules, and in-browser import from PDF, TXT or Markdown so files never touch the server. Accounts use Better Auth (Google OAuth and email/password), with opt-in private shareable links, a curated job-portals directory, and full English/Portuguese internationalization at 457 keys each. Built with Next.js 16 and React 19, including a custom Kysely dialect for libSQL and a security model where ownership always comes from the session, never the request.",
+      "ShortlistCV is a guided, section-based CV editor with a live preview that renders the actual PDF export (via @react-pdf/renderer, painted to canvas with pdf.js) rather than an HTML approximation. It ships 16 templates, 9 of them flagged ATS-safe, a transparent 0–100 CV score built from 16 weighted, convention-backed rules, and in-browser import from PDF, TXT or Markdown so files never touch the server. Accounts use Better Auth (Google OAuth and email/password), with opt-in private shareable links, a curated job-portals directory, and full English/Portuguese internationalization at 457 keys each. Built with Next.js 16 and React 19, including a custom Kysely dialect for libSQL and a security model where ownership always comes from the session, never the request.",
     role: "Full-stack Developer",
     stack: [
       { id: 3, name: "Nextjs" },
@@ -499,8 +499,8 @@ export const PROJECTS: Project[] = [
     tag: "",
     access: "Public",
     owner: "self",
-    link: "https://cvbuilder.tysonmonteiro.dev/",
-    image: "/cvbuilder.png",
+    link: "https://shortlistcv.app/",
+    image: "/editor-2026.webp",
   },
 ];
 

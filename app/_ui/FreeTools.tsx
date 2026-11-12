@@ -13,13 +13,13 @@ import { ArrowUpRight } from "lucide-react";
  */
 const TOOLS = [
   {
-    headline: "Build your CV for free",
-    name: "Tyson CV Builder",
+    headline: "Build your CV",
+    name: "Shortlist CV",
     pitch:
-      "13 templates, 9 of them ATS-safe, and a live preview that renders the real PDF you'll download.",
-    href: "https://cvbuilder.tysonmonteiro.dev/",
-    image: "/cvbuilder.png",
-    slug: "tyson-cv-builder",
+      "16 templates, 9 of them ATS-safe, and a live preview that renders the real PDF you'll download.",
+    href: "https://shortlistcv.app/",
+    image: "/editor-2026.webp",
+    slug: "shortlist-cv",
   },
   {
     headline: "Get your predictions right",
